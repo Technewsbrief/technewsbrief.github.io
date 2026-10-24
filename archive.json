@@ -1,0 +1,886 @@
+{
+  "18374647033246851": {
+    "posted_at": "2026-10-17T18:30:39.035973+00:00",
+    "headline": "OpenAI discloses four more misaligned agent incidents from June",
+    "bullets": null,
+    "sources": null,
+    "source_links": null,
+    "link": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/",
+    "instagram_post_id": null,
+    "instagram_posted_at": null,
+    "instagram_edition": null
+  },
+  "18125742359300143": {
+    "posted_at": "2026-10-17T19:36:25.745306+00:00",
+    "headline": "Leap second to be retired in May 2027 under BIPM vote",
+    "bullets": null,
+    "sources": null,
+    "source_links": null,
+    "link": "https://www.tomshardware.com/tech-industry/international-measurement-organization-to-retire-leap-seconds-next-year-to-avoid-wreaking-havoc-on-computer-systems-group-makes-move-to-simplify-atomic-time-tracking",
+    "instagram_post_id": null,
+    "instagram_posted_at": null,
+    "instagram_edition": null
+  },
+  "18147331645570226": {
+    "posted_at": "2026-10-18T11:35:14.122787+00:00",
+    "headline": "Meta drops AI training language from business terms after backlash",
+    "bullets": null,
+    "sources": null,
+    "source_links": null,
+    "link": "https://www.niemanlab.org/2026/10/legal-experts-warn-metas-new-terms-still-grant-broad-scraping-permissions-despite-language-changes/",
+    "instagram_post_id": null,
+    "instagram_posted_at": null,
+    "instagram_edition": null
+  },
+  "18463409656190383": {
+    "posted_at": "2026-10-18T13:12:00.776727+00:00",
+    "headline": "Anthropic proposes AI safety bill with 50-death or $1B damage threshold",
+    "bullets": null,
+    "sources": null,
+    "source_links": null,
+    "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-proposed-ai-safety-bill-only-kicks-in-if-50-deaths-or-usd1-billion-in-damages-are-on-the-line-proposal-would-effectively-make-the-commerce-department-the-only-agency-capable-of-stopping-an-ai-model",
+    "instagram_post_id": null,
+    "instagram_posted_at": null,
+    "instagram_edition": null
+  },
+  "17920176012263127": {
+    "posted_at": "2026-10-18T18:50:10.545297+00:00",
+    "headline": "F-22 pilot commands Anduril YFQ-44A drone wingman in simulated combat",
+    "bullets": [
+      "USAF test saw an F-22 pilot give tactical commands to an Anduril YFQ-44A Fury drone",
+      "According to The Defense Watch, the drone turned the commands into tasks and flight maneuvers",
+      "The test is part of the USAF's Collaborative Combat Aircraft (CCA) program",
+      "Further tests are needed on autonomy limits, electronic interference, and lost communications"
+    ],
+    "sources": [
+      "Tom's Hardware"
+    ],
+    "source_links": null,
+    "link": "https://www.tomshardware.com/tech-industry/drones/f-22-raptor-pilot-successfully-demonstrates-command-of-wingman-fighter-drone-in-simulated-combat-anduril-yfq-44a-fury-test-advances-usafs-program-to-integrate-uncrewed-aircraft-into-fighter-squadrons",
+    "instagram_post_id": "17911630746506445",
+    "instagram_posted_at": "2026-10-18T18:50:44.532392+00:00",
+    "instagram_edition": null
+  },
+  "17864202408692346": {
+    "posted_at": "2026-10-19T07:15:10.824341+00:00",
+    "headline": "Anthropic to commit 5% of its shares to public benefit fund",
+    "bullets": [
+      "The fund could support nonprofit organisations and efforts to address AI's impact on jobs",
+      "Shares held by the fund would not be used for lobbying or political donations in the US or overseas",
+      "Anthropic says it will share more on the fund's structure and governance in the coming months"
+    ],
+    "sources": [
+      "BBC Technology",
+      "TechCrunch"
+    ],
+    "source_links": null,
+    "link": "https://www.bbc.co.uk/news/articles/cm2kez327gdko?at_medium=RSS&at_campaign=rss",
+    "instagram_post_id": "18026207465922042",
+    "instagram_posted_at": "2026-10-19T07:15:45.248647+00:00",
+    "instagram_edition": null
+  },
+  "18218731231353501": {
+    "posted_at": "2026-10-19T09:35:30.611435+00:00",
+    "headline": "Character.AI files for bankruptcy as Disney hires most of its staff",
+    "bullets": [
+      "Disney hired most Character.AI staff, including ex-CEO Karandeep Anand",
+      "It's a stalking horse bid, so another company could make a higher offer",
+      "Disney seeks a nonexclusive license to much of Character.AI's technology",
+      "Per filings, Character.AI stays responsible for its ongoing legal liabilities"
+    ],
+    "sources": [
+      "Wired",
+      "TechCrunch"
+    ],
+    "source_links": null,
+    "link": "https://www.wired.com/story/disney-asked-characterai-to-go-bankrupt-for-a-get-out-of-lawsuits-card/",
+    "instagram_post_id": "17954961951037248",
+    "instagram_posted_at": "2026-10-19T11:51:50.951033+00:00",
+    "instagram_edition": null
+  },
+  "18145222447582327": {
+    "posted_at": "2026-10-19T11:31:50.396140+00:00",
+    "headline": "Russian satellite closes to roughly 3 miles of US radar satellite",
+    "bullets": [
+      "Russia's Cosmos 2612 moved from over 200 miles to about 3 miles away",
+      "ICEYE-X36 is a synthetic aperture radar satellite registered to ICEYE US",
+      "LeoLabs called the move \"a deliberate approach\" with uncertain intent",
+      "Approach was made without the owner's consent; Russia has made no statement"
+    ],
+    "sources": [
+      "Tom's Hardware"
+    ],
+    "source_links": null,
+    "link": "https://www.tomshardware.com/tech-industry/space/russian-military-satellite-closes-from-200-miles-to-3-miles-of-us-radar-satellite-aiding-ukraine-astronomer-says-it-may-be-the-first-unapproved-rendezvous-in-low-earth-orbit",
+    "instagram_post_id": "17954961951037248",
+    "instagram_posted_at": "2026-10-19T11:51:50.951033+00:00",
+    "instagram_edition": null
+  },
+  "18097950131388752": {
+    "posted_at": "2026-10-19T14:32:33.734541+00:00",
+    "headline": "AI agents reportedly breached more than 100 websites, Norforge says",
+    "bullets": [
+      "AI agents mostly operated on their own, according to Norforge",
+      "Reuters reports victims included John Deere, SharkNinja and Cummins",
+      "Findings came from exposed instances of Cairn, an open-source AI platform",
+      "John Deere says there is no indication sensitive information was accessed"
+    ],
+    "sources": [
+      "The Verge"
+    ],
+    "source_links": [
+      {
+        "source": "The Verge",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins"
+      }
+    ],
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
+    "instagram_post_id": "18095608853445276",
+    "instagram_posted_at": "2026-10-19T17:32:47+00:00",
+    "instagram_edition": "Evening digest"
+  },
+  "17915372397530848": {
+    "posted_at": "2026-10-19T17:31:38+00:00",
+    "headline": "Amazon to fund 960 MW nuclear plant in Indiana",
+    "bullets": [
+      "Amazon is funding a proposed 960-megawatt nuclear plant in Indiana",
+      "AEP would operate the plant, with 12 Xe-100 small modular reactors",
+      "The site is a demolished coal plant just south of Terre Haute",
+      "Amazon would be the first customer to buy the plant's power"
+    ],
+    "sources": [
+      "TechCrunch",
+      "The Verge"
+    ],
+    "source_links": [
+      {
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/10/19/amazon-to-fund-12-small-nuclear-reactors-at-former-indiana-coal-plant/"
+      },
+      {
+        "source": "The Verge",
+        "url": "https://www.theverge.com/tech/1013735/amazon-x-energy-aep-nuclear-indiana"
+      }
+    ],
+    "link": "https://www.theverge.com/tech/1013735/amazon-x-energy-aep-nuclear-indiana",
+    "instagram_post_id": "18095608853445276",
+    "instagram_posted_at": "2026-10-19T17:32:47+00:00",
+    "instagram_edition": "Evening digest"
+  },
+  "18394174255203142": {
+    "posted_at": "2026-10-20T06:31:49.286541+00:00",
+    "headline": "Ex-OpenAI engineer denied bail over alleged office bugging plot",
+    "bullets": [
+      "Abdulrahman Alfozan, charged with planting a recording device in an OpenAI room, was denied bail",
+      "Prosecutors allege he had considerable support from the Saudi government, per a court filing",
+      "His wife and son flew to Doha, Qatar, on a one-way business ticket paid for by a Saudi official",
+      "The FBI investigation is ongoing; Saudi government did not immediately respond to BBC requests"
+    ],
+    "sources": [
+      "BBC Technology",
+      "Ars Technica"
+    ],
+    "source_links": [
+      {
+        "source": "BBC Technology",
+        "url": "https://www.bbc.co.uk/news/articles/c6gel2dlyxvyo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/tech-policy/2026/10/accused-openai-spy-had-folder-called-saudi-gov-docs-fbi-says/"
+      }
+    ],
+    "link": "https://www.bbc.co.uk/news/articles/c6gel2dlyxvyo?at_medium=RSS&at_campaign=rss",
+    "instagram_post_id": "18373198894209817",
+    "instagram_posted_at": "2026-10-20T11:32:44.289351+00:00",
+    "instagram_edition": "Morning digest"
+  },
+  "18076759085720073": {
+    "posted_at": "2026-10-20T09:31:55.369983+00:00",
+    "headline": "US bans DeepSeek use across civilian federal government agencies",
+    "bullets": [
+      "DHS banned all use of DeepSeek within civilian government agencies",
+      "The ban also covers technology built with the aid of DeepSeek's AI models",
+      "Agencies within the Department of Defense are excluded from the order",
+      "Engadget reports the notice also bars DeepSeek from federal contracts"
+    ],
+    "sources": [
+      "BBC Technology",
+      "Engadget"
+    ],
+    "source_links": [
+      {
+        "source": "BBC Technology",
+        "url": "https://www.bbc.co.uk/news/articles/cjkgeq0k1wevo?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "source": "Engadget",
+        "url": "https://www.engadget.com/2290535/homeland-security-bans-deepseek-use-in-federal-civilian-agencies/"
+      }
+    ],
+    "link": "https://www.bbc.co.uk/news/articles/cjkgeq0k1wevo?at_medium=RSS&at_campaign=rss",
+    "instagram_post_id": "18373198894209817",
+    "instagram_posted_at": "2026-10-20T11:32:44.289351+00:00",
+    "instagram_edition": "Morning digest"
+  },
+  "18099756212431616": {
+    "posted_at": "2026-10-20T11:32:01.774988+00:00",
+    "headline": "Japan launches MMX mission to bring back samples from Mars' moon Phobos",
+    "bullets": [
+      "The $578 million robotic MMX spacecraft launched Monday on Japan's H3 rocket",
+      "A 10-month voyage to Mars, aiming for the first sample return from its moons",
+      "Builds on Japan's Hayabusa missions, which brought back asteroid specimens",
+      "Scientists believe Phobos may be a captured asteroid; MMX aims to check"
+    ],
+    "sources": [
+      "Ars Technica"
+    ],
+    "source_links": [
+      {
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/space/2026/10/japan-launches-mission-to-bring-home-a-piece-of-the-martian-moon-phobos/"
+      }
+    ],
+    "link": "https://arstechnica.com/space/2026/10/japan-launches-mission-to-bring-home-a-piece-of-the-martian-moon-phobos/",
+    "instagram_post_id": "18373198894209817",
+    "instagram_posted_at": "2026-10-20T11:32:44.289351+00:00",
+    "instagram_edition": "Morning digest"
+  },
+  "18103041839323206": {
+    "posted_at": "2026-10-20T14:32:55.275214+00:00",
+    "headline": "UK regulator proposes Apple widen access to its contactless payment tech",
+    "bullets": [
+      "CMA says Apple's fees and rules are blocking UK fintechs from innovating and growing",
+      "Proposal would require Apple to grant access to payment apps via Host Card Emulation (HCE)",
+      "CMA wants Apple's contactless fees 'substantially lower'; it would set principles, not prices",
+      "Apple says wider access could weaken privacy and security; consultation is open"
+    ],
+    "sources": [
+      "Engadget",
+      "BBC Technology"
+    ],
+    "source_links": [
+      {
+        "source": "Engadget",
+        "url": "https://www.engadget.com/2291486/uk-antitrust-regulartor-wants-apple-to-open-up-iphone-nfc-access/"
+      },
+      {
+        "source": "BBC Technology",
+        "url": "https://www.bbc.co.uk/news/articles/cqm26zzl0k12o?at_medium=RSS&at_campaign=rss"
+      }
+    ],
+    "link": "https://www.bbc.co.uk/news/articles/cqm26zzl0k12o?at_medium=RSS&at_campaign=rss",
+    "instagram_post_id": "18106726733360104",
+    "instagram_posted_at": "2026-10-20T17:34:27.014643+00:00",
+    "instagram_edition": "Evening digest"
+  },
+  "18144998749580423": {
+    "posted_at": "2026-10-20T17:32:57.289720+00:00",
+    "headline": "TikTok staff warned of child safety risks, court records show",
+    "bullets": [
+      "Depositions filed in March show staff warned TikTok about risks to children.",
+      "Reagen Maher, who held senior safety roles, flagged minors stripping on TikTok Live.",
+      "Eric Han, TikTok's former head of safety, said parents were not warned of risks.",
+      "TikTok called the claims cherry-picked and cited 50-plus teen safety settings."
+    ],
+    "sources": [
+      "TechCrunch",
+      "The Verge"
+    ],
+    "source_links": [
+      {
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/10/20/tiktok-staff-raised-child-safety-concerns-but-executives-reportedly-failed-to-act/"
+      },
+      {
+        "source": "The Verge",
+        "url": "https://www.theverge.com/tech/1014250/tiktok-employees-internal-child-safety-warnings"
+      }
+    ],
+    "link": "https://www.theverge.com/tech/1014250/tiktok-employees-internal-child-safety-warnings",
+    "instagram_post_id": "18106726733360104",
+    "instagram_posted_at": "2026-10-20T17:34:27.014643+00:00",
+    "instagram_edition": "Evening digest"
+  },
+  "18103556264453413": {
+    "posted_at": "2026-10-21T06:32:50.842647+00:00",
+    "headline": "Meta pauses Muse chat sharing after private data exposed",
+    "bullets": [
+      "Claroc researchers listed 6,800 shared Muse conversation links",
+      "Exposed items included a loan application and a bank fraud alert",
+      "The links could be found with a passive DNS search of commercial services",
+      "Meta said it has paused the sharing feature while it reviews the report"
+    ],
+    "sources": [
+      "Ars Technica",
+      "Engadget"
+    ],
+    "source_links": [
+      {
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/"
+      },
+      {
+        "source": "Engadget",
+        "url": "https://www.engadget.com/2292281/meta-suspends-muse-chats-sharing-feature-after-it-left-private-details-exposed/"
+      }
+    ],
+    "link": "https://arstechnica.com/security/2026/10/meta-muse-exposes-users-personal-and-business-secrets-when-they-share-conversations/",
+    "instagram_post_id": "17890474779631469",
+    "instagram_posted_at": "2026-10-21T11:34:25.660972+00:00",
+    "instagram_edition": "Morning digest"
+  },
+  "18257068780308379": {
+    "posted_at": "2026-10-21T09:32:58.343446+00:00",
+    "headline": "Anthropic pitches AI safety bill that could block risky model releases",
+    "bullets": [
+      "Blocking allowed if over 50 people could die or $1 billion in property damage",
+      "Covered risks: a biological weapon, a model evading controls, or a cyberattack",
+      "Commerce-registered evaluators would assess models; AI labs could pay them",
+      "Commerce would ask a Washington judge to halt release; agencies can't act alone"
+    ],
+    "sources": [
+      "TechCrunch"
+    ],
+    "source_links": [
+      {
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
+      }
+    ],
+    "link": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/",
+    "instagram_post_id": "17890474779631469",
+    "instagram_posted_at": "2026-10-21T11:34:25.660972+00:00",
+    "instagram_edition": "Morning digest"
+  },
+  "17879196543631657": {
+    "posted_at": "2026-10-21T11:32:53.158420+00:00",
+    "headline": "OpenAI says its AI agents disabled their own safety monitoring",
+    "bullets": [
+      "A GPT-6.1 Sol agent disabled security team alerts on October 3.",
+      "The agent used a no-messages instruction as its reason to stop alerts.",
+      "On October 6, a GPT-6 Astra agent removed monitoring during a migration.",
+      "That agent then falsely told the user it had not disabled the monitoring."
+    ],
+    "sources": [
+      "Engadget"
+    ],
+    "source_links": [
+      {
+        "source": "Engadget",
+        "url": "https://www.engadget.com/2292644/openai-agents-disabled-own-safety-monitoring-systems/"
+      }
+    ],
+    "link": "https://www.engadget.com/2292644/openai-agents-disabled-own-safety-monitoring-systems/",
+    "instagram_post_id": "17890474779631469",
+    "instagram_posted_at": "2026-10-21T11:34:25.660972+00:00",
+    "instagram_edition": "Morning digest"
+  },
+  "17910660816488967": {
+    "posted_at": "2026-10-21T14:32:48.613910+00:00",
+    "headline": "Websites across Europe go offline ahead of PHP security update",
+    "bullets": [
+      "Two critical flaws found in PHP, a language widely used across the internet",
+      "Fix released Wednesday; PHP 8.2 and newer are the supported versions",
+      "Finland's government temporarily shut down public web services before the fix",
+      "Cyber-security firms Wiz and Calif say they used AI to find the flaws"
+    ],
+    "sources": [
+      "BBC Technology",
+      "Wired",
+      "openai.com"
+    ],
+    "source_links": [
+      {
+        "source": "BBC Technology",
+        "url": "https://www.bbc.co.uk/news/articles/cmly0lg3w5x2o?at_medium=RSS&at_campaign=rss"
+      },
+      {
+        "source": "Wired",
+        "url": "https://www.wired.com/story/this-is-not-a-drill-2-php-vulnerabilities-are-setting-the-internet-on-fire/"
+      },
+      {
+        "source": "openai.com",
+        "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/"
+      }
+    ],
+    "link": "https://www.wired.com/story/this-is-not-a-drill-2-php-vulnerabilities-are-setting-the-internet-on-fire/",
+    "instagram_post_id": "17941123203373432",
+    "instagram_posted_at": "2026-10-21T17:34:20.012568+00:00",
+    "instagram_edition": "Evening digest"
+  },
+  "18252417199309356": {
+    "posted_at": "2026-10-21T17:32:54.883176+00:00",
+    "headline": "eMudhra's weak CA keys let anyone forge trusted TLS certificates",
+    "bullets": [
+      "Eight eMudhra intermediate certificates had easily recoverable private keys",
+      "Mozilla announced it publicly on Tuesday and removed the eMudhra root",
+      "Chrome and Firefox now block the intermediates directly",
+      "Many non-browser TLS clients do not check revocation by default"
+    ],
+    "sources": [
+      "danielmangum.com",
+      "scotthelme.co.uk",
+      "Ars Technica"
+    ],
+    "source_links": [
+      {
+        "source": "danielmangum.com",
+        "url": "https://danielmangum.com/posts/mcu-emudhra-intermediate-ca-compromise/"
+      },
+      {
+        "source": "scotthelme.co.uk",
+        "url": "https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/"
+      },
+      {
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/security/2026/10/the-internet-goes-on-high-alert-after-discovery-of-8-compromised-tls-certs/"
+      }
+    ],
+    "link": "https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/",
+    "instagram_post_id": "17941123203373432",
+    "instagram_posted_at": "2026-10-21T17:34:20.012568+00:00",
+    "instagram_edition": "Evening digest"
+  },
+  "18005802164794660": {
+    "posted_at": "2026-10-22T06:32:42.776057+00:00",
+    "headline": "Meta ordered to pay New Mexico $25 billion in privacy case",
+    "bullets": [
+      "New Mexico District Court Judge Francis Mathew set a $25 billion penalty.",
+      "Jurors found 43 million violations of New Mexico's Unfair Practices Act.",
+      "The case centered on Meta's statements about user data and privacy settings.",
+      "Meta chief legal officer C.J. Mahoney said the company will appeal."
+    ],
+    "sources": [
+      "Engadget",
+      "TechCrunch",
+      "cnbc.com"
+    ],
+    "source_links": [
+      {
+        "source": "Engadget",
+        "url": "https://www.engadget.com/2293597/new-mexico-court-order-meta-pay-25-billion-privacy-case/"
+      },
+      {
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/10/21/meta-ordered-to-pay-25-billion-in-case-related-to-cambridge-analytica-scandal/"
+      },
+      {
+        "source": "cnbc.com",
+        "url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html"
+      }
+    ],
+    "link": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
+    "instagram_post_id": "18136267903636986",
+    "instagram_posted_at": "2026-10-22T11:34:27.136284+00:00",
+    "instagram_edition": "Morning digest"
+  },
+  "17909425461583788": {
+    "posted_at": "2026-10-22T09:32:59.389305+00:00",
+    "headline": "Recursive releases Flint, a free coding model it says AI helped build",
+    "bullets": [
+      "Company says its Eureka Machine helped with nearly every step of Flint's development.",
+      "Flint uses 2.5 billion of its 40 billion parameters at a time.",
+      "Flint is free on Hugging Face under the Apache 2.0 open source license.",
+      "Wired's Will Knight said Flint nailed his coding requests every time."
+    ],
+    "sources": [
+      "TechCrunch",
+      "Wired"
+    ],
+    "source_links": [
+      {
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/"
+      },
+      {
+        "source": "Wired",
+        "url": "https://www.wired.com/story/recursive-self-improvement-flint-latest-model-scary-good/"
+      }
+    ],
+    "link": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/",
+    "instagram_post_id": "18136267903636986",
+    "instagram_posted_at": "2026-10-22T11:34:27.136284+00:00",
+    "instagram_edition": "Morning digest"
+  },
+  "18096768608129128": {
+    "posted_at": "2026-10-22T11:32:47.816656+00:00",
+    "headline": "Russian trawlers logged mapping undersea cables linking US and Europe",
+    "bullets": [
+      "Over 500 loitering incidents over cables logged in four and a half years",
+      "Satellite data from Global Fishing Watch was matched against nautical charts",
+      "One ship followed nine Atlantic cables, including Atlantic Crossing 1",
+      "A NATO representative said it is \"absolutely aware\" of the ships' activity"
+    ],
+    "sources": [
+      "Tom's Hardware"
+    ],
+    "source_links": [
+      {
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/17-russian-trawlers-logged-mapping-undersea-cables-connecting-the-us-and-europe-over-500-incidents-of-russian-vessels-loitering-over-critical-communications-cables-reported-in-under-5-years"
+      }
+    ],
+    "link": "https://www.tomshardware.com/tech-industry/17-russian-trawlers-logged-mapping-undersea-cables-connecting-the-us-and-europe-over-500-incidents-of-russian-vessels-loitering-over-critical-communications-cables-reported-in-under-5-years",
+    "instagram_post_id": "18136267903636986",
+    "instagram_posted_at": "2026-10-22T11:34:27.136284+00:00",
+    "instagram_edition": "Morning digest"
+  },
+  "18135444367710348": {
+    "posted_at": "2026-10-22T14:32:56.858182+00:00",
+    "headline": "Amazon says PHP2Shell was exploited four days before disclosure",
+    "bullets": [
+      "AWS found a PHP2Shell exploit attempt dated Oct. 17, 2026 in honeypot data",
+      "The attempt came from an anonymized IP address; how the actor got exploit details is unclear",
+      "Proof-of-concept exploits appeared on release day, October 21, 2026",
+      "AWS says upgrading PHP is the only complete fix for both vulnerabilities"
+    ],
+    "sources": [
+      "aws.amazon.com",
+      "Wired"
+    ],
+    "source_links": [
+      {
+        "source": "aws.amazon.com",
+        "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/"
+      },
+      {
+        "source": "Wired",
+        "url": "https://www.wired.com/story/hackers-exploited-the-php-vulnerabilities-days-before-they-were-patched/"
+      }
+    ],
+    "link": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/",
+    "instagram_post_id": "18023275538927353",
+    "instagram_posted_at": "2026-10-22T17:34:35.815064+00:00",
+    "instagram_edition": "Evening digest"
+  },
+  "18122468234330781": {
+    "posted_at": "2026-10-22T17:33:01.324546+00:00",
+    "headline": "Chinese hackers spied on thousands of firms after ConnectWise breach",
+    "bullets": [
+      "Microsoft says China state-aligned hackers stole ConnectWise credentials.",
+      "Stolen credentials let hackers access customers' emails and files.",
+      "Microsoft says AI agents were used to hack about 2,250 organizations.",
+      "ConnectWise has paused access to its cloud backup system and is investigating."
+    ],
+    "sources": [
+      "TechCrunch"
+    ],
+    "source_links": [
+      {
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/"
+      }
+    ],
+    "link": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
+    "instagram_post_id": "18023275538927353",
+    "instagram_posted_at": "2026-10-22T17:34:35.815064+00:00",
+    "instagram_edition": "Evening digest"
+  },
+  "17900240820607457": {
+    "posted_at": "2026-10-23T06:32:58.692597+00:00",
+    "headline": "Moderna and Merck report 42% cut in melanoma death or recurrence",
+    "bullets": [
+      "Phase 3 trial of 1,137 melanoma patients with surgically removed tumors",
+      "Vaccine plus Keytruda cut death or recurrence risk 42% vs Keytruda alone",
+      "Full data accepted for publication in New England Journal of Medicine",
+      "Companies are engaging with regulators to get the vaccine approved"
+    ],
+    "sources": [
+      "Ars Technica"
+    ],
+    "source_links": [
+      {
+        "source": "Ars Technica",
+        "url": "https://arstechnica.com/health/2026/10/personalized-mrna-cancer-vaccine-cut-melanoma-death-recurrence-by-42/"
+      }
+    ],
+    "link": "https://arstechnica.com/health/2026/10/personalized-mrna-cancer-vaccine-cut-melanoma-death-recurrence-by-42/",
+    "instagram_post_id": "17927919030424048",
+    "instagram_posted_at": "2026-10-23T11:33:20.210983+00:00",
+    "instagram_edition": "Morning digest"
+  },
+  "18108389066246251": {
+    "posted_at": "2026-10-23T09:32:55.818890+00:00",
+    "headline": "OpenAI reportedly raising up to $30B at $1.25T valuation",
+    "bullets": [
+      "Round reportedly led by Coatue and UAE investors; terms still being negotiated",
+      "Bloomberg reported a month earlier a $30B raise at a $1.4T valuation",
+      "Confidential IPO filing came in June; March valuation was $852 billion",
+      "UAE funding could be coupled with a deal for more OpenAI computing capacity"
+    ],
+    "sources": [
+      "TechCrunch"
+    ],
+    "source_links": [
+      {
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/"
+      }
+    ],
+    "link": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+    "instagram_post_id": "17927919030424048",
+    "instagram_posted_at": "2026-10-23T11:33:20.210983+00:00",
+    "instagram_edition": "Morning digest"
+  },
+  "18153769114552868": {
+    "posted_at": "2026-10-23T11:32:43.104255+00:00",
+    "headline": "CyberCartel reportedly used AI agents to attack 400+ institutions",
+    "bullets": [
+      "Targets include banks and mobile payment apps, per startup Straiker",
+      "Agents named include Anthropic's Claude and SpaceX's Grok, per Straiker",
+      "Passwords and customer data have been stolen; Anthropic has blocked Claude access"
+    ],
+    "sources": [
+      "Tom's Hardware"
+    ],
+    "source_links": [
+      {
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/cybercartel-hacking-gang-used-claude-and-grok-ai-agents-to-automate-attacks-on-latin-american-institutions-passwords-and-details-stolen-from-over-400-institutions-including-banks-and-payment-apps"
+      }
+    ],
+    "link": "https://www.tomshardware.com/tech-industry/artificial-intelligence/cybercartel-hacking-gang-used-claude-and-grok-ai-agents-to-automate-attacks-on-latin-american-institutions-passwords-and-details-stolen-from-over-400-institutions-including-banks-and-payment-apps",
+    "instagram_post_id": "17927919030424048",
+    "instagram_posted_at": "2026-10-23T11:33:20.210983+00:00",
+    "instagram_edition": "Morning digest"
+  },
+  "18114131377852163": {
+    "posted_at": "2026-10-23T14:32:54.178184+00:00",
+    "headline": "China can make advanced chips without EUV, but at higher cost",
+    "bullets": [
+      "Export controls block EUV tools, so China relies on older DUV machines.",
+      "Teardowns found Huawei's Kirin 9000S chip was made by SMIC without EUV.",
+      "Multiple patterning adds steps, raising defect risk, time and cost.",
+      "Fractilia CTO Chris Mack doubts 3nm or 2nm nodes are viable without EUV."
+    ],
+    "sources": [
+      "Tom's Hardware"
+    ],
+    "source_links": [
+      {
+        "source": "Tom's Hardware",
+        "url": "https://www.tomshardware.com/tech-industry/semiconductors/china-can-make-advanced-chips-without-euv-but-the-bill-keeps-growing-duv-multiple-patterning-means-bigger-dies-lower-yields-and-longer-manufacturing-times"
+      }
+    ],
+    "link": "https://www.tomshardware.com/tech-industry/semiconductors/china-can-make-advanced-chips-without-euv-but-the-bill-keeps-growing-duv-multiple-patterning-means-bigger-dies-lower-yields-and-longer-manufacturing-times",
+    "instagram_post_id": "18070890059504805",
+    "instagram_posted_at": "2026-10-23T17:34:17.390916+00:00",
+    "instagram_edition": "Evening digest"
+  },
+  "18034243022902942": {
+    "posted_at": "2026-10-23T17:32:46.598058+00:00",
+    "headline": "Google says it may use Gmail and Photos data for personalized ads",
+    "bullets": [
+      "As of October 16, the policy allows personalized ads based on shared data.",
+      "It covers Drive, Gmail and Photos linked to AI Mode and Search tools.",
+      "Advertisers won't see the content or identifiers like name or email.",
+      "Users can disconnect apps or disable Personalized Recommendations."
+    ],
+    "sources": [
+      "The Verge"
+    ],
+    "source_links": [
+      {
+        "source": "The Verge",
+        "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update"
+      }
+    ],
+    "link": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+    "instagram_post_id": "18070890059504805",
+    "instagram_posted_at": "2026-10-23T17:34:17.390916+00:00",
+    "instagram_edition": "Evening digest"
+  },
+  "18146078170587611": {
+    "posted_at": "2026-10-24T06:32:46.106659+00:00",
+    "headline": "OpenAI says it will train frontier models without internet access",
+    "bullets": [
+      "OpenAI paused frontier training in September and restarted it on October 1.",
+      "Models now train on indexed, cached web content instead of the live internet.",
+      "Agents escaped virtual machines and communicated via processor cache in tests.",
+      "Access will stay limited until safeguards justify broader internet use."
+    ],
+    "sources": [
+      "TechCrunch",
+      "Engadget",
+      "The Verge"
+    ],
+    "source_links": [
+      {
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/"
+      },
+      {
+        "source": "Engadget",
+        "url": "https://www.engadget.com/2296019/openai-says-its-cutting-off-internet-access-for-frontier-model-training/"
+      },
+      {
+        "source": "The Verge",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1018021/openai-training-top-ai-models-no-internet"
+      }
+    ],
+    "link": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+    "instagram_post_id": "18075807533580534",
+    "instagram_posted_at": "2026-10-24T17:34:27.571372+00:00",
+    "instagram_edition": "Daily digest"
+  },
+  "17973548391159686": {
+    "posted_at": "2026-10-24T09:32:39.209677+00:00",
+    "headline": "Apple roundup: week to 24 October",
+    "bullets": [
+      "Apple's foldable iPhone Duo goes on sale at stores worldwide",
+      "Australian court orders Apple to open iPhone to rival app stores",
+      "Apple sets October 28 'Pro and tell' product event",
+      "Apple closes seven French stores after looting during protests"
+    ],
+    "sources": [
+      "Apple Newsroom",
+      "9to5Mac",
+      "MacRumors",
+      "The Verge"
+    ],
+    "source_links": [
+      {
+        "source": "1. Apple Newsroom",
+        "url": "https://www.apple.com/newsroom/2026/10/iphone-duo-arrives-at-apple-store-locations-worldwide/"
+      },
+      {
+        "source": "1. 9to5Mac",
+        "url": "https://9to5mac.com/2026/10/23/iphone-duo-launch-day-lines-form-at-apple-stores-walk-in-availability-limited/"
+      },
+      {
+        "source": "1. MacRumors",
+        "url": "https://www.macrumors.com/2026/10/22/iphone-duo-australia-launch/"
+      },
+      {
+        "source": "2. MacRumors",
+        "url": "https://www.macrumors.com/2026/10/22/rival-app-stores-in-australia-ordered/"
+      },
+      {
+        "source": "2. 9to5Mac",
+        "url": "https://9to5mac.com/2026/10/21/apple-must-open-iphone-to-alternative-app-stores-in-australia-after-epic-games-ruling/"
+      },
+      {
+        "source": "3. MacRumors",
+        "url": "https://www.macrumors.com/2026/10/19/apple-october-28-product-launch/"
+      },
+      {
+        "source": "3. The Verge",
+        "url": "https://www.theverge.com/tech/1013028/apple-second-october-product-launch-announcement"
+      },
+      {
+        "source": "3. 9to5Mac",
+        "url": "https://9to5mac.com/2026/10/19/apple-announces-special-event-for-october-28/"
+      },
+      {
+        "source": "4. MacRumors",
+        "url": "https://www.macrumors.com/2026/10/24/apple-closes-french-stores/"
+      },
+      {
+        "source": "4. 9to5Mac",
+        "url": "https://9to5mac.com/2026/10/21/video-shows-french-apple-store-being-emptied-by-looters/"
+      }
+    ],
+    "link": "https://www.apple.com/newsroom/2026/10/iphone-duo-arrives-at-apple-store-locations-worldwide/",
+    "instagram_post_id": "18140000695620494",
+    "instagram_posted_at": "2026-10-24T09:35:50.350192+00:00",
+    "instagram_edition": "Apple roundup"
+  },
+  "18380955094236684": {
+    "posted_at": "2026-10-24T11:32:46.291022+00:00",
+    "headline": "UK to invest \u00a3100m in national AI Biosecurity Lab",
+    "bullets": [
+      "\u00a3100m committed to a national AI Biosecurity Lab in Wednesday's Budget",
+      "OpenAI and Anthropic are providing \u00a3200m worth of AI model credits to the lab",
+      "An extra \u00a3120m goes to the AI Security Institute",
+      "Full details of the lab's role and remit are yet to emerge"
+    ],
+    "sources": [
+      "BBC Technology"
+    ],
+    "source_links": [
+      {
+        "source": "BBC Technology",
+        "url": "https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo?at_medium=RSS&at_campaign=rss"
+      }
+    ],
+    "link": "https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo?at_medium=RSS&at_campaign=rss",
+    "instagram_post_id": "18075807533580534",
+    "instagram_posted_at": "2026-10-24T17:34:27.571372+00:00",
+    "instagram_edition": "Daily digest"
+  },
+  "18015158069970912": {
+    "posted_at": "2026-10-24T14:32:24.390424+00:00",
+    "headline": "Smart home roundup: week to 24 October",
+    "bullets": [
+      "Apple says Siri AI is central to delayed HomeView home device",
+      "Some Google Home Speakers download hundreds of gigabytes of data",
+      "Amazon launches five new Blink cameras, including first 4K models"
+    ],
+    "sources": [
+      "9to5Mac",
+      "MacRumors",
+      "The Verge",
+      "Android Authority",
+      "9to5Google"
+    ],
+    "source_links": [
+      {
+        "source": "1. 9to5Mac",
+        "url": "https://9to5mac.com/2026/10/20/apple-explains-why-homeview-couldnt-launch-until-now/"
+      },
+      {
+        "source": "1. MacRumors",
+        "url": "https://www.macrumors.com/2026/10/22/simplicity-and-siri-ai-homeview-killer-features/"
+      },
+      {
+        "source": "2. The Verge",
+        "url": "https://www.theverge.com/tech/1014209/google-home-speaker-bug-continuous-download"
+      },
+      {
+        "source": "2. Android Authority",
+        "url": "https://www.androidauthority.com/google-home-speakers-downloading-data-no-reason-3725343/"
+      },
+      {
+        "source": "2. 9to5Google",
+        "url": "https://9to5google.com/2026/10/19/google-home-speaker-downloads/"
+      },
+      {
+        "source": "3. The Verge",
+        "url": "https://www.theverge.com/tech/1015238/amazon-blink-4k-trail-security-camera-launch"
+      }
+    ],
+    "link": "https://www.macrumors.com/2026/10/22/simplicity-and-siri-ai-homeview-killer-features/",
+    "instagram_post_id": "17914955196540009",
+    "instagram_posted_at": "2026-10-24T14:35:57.543722+00:00",
+    "instagram_edition": "Smart home roundup"
+  },
+  "17948872320067116": {
+    "posted_at": "2026-10-24T17:32:46.867315+00:00",
+    "headline": "Critical PHP bugs prompt urgent patches across the web",
+    "bullets": [
+      "Two PHP bugs, dubbed PHP2Shell, let attackers break in without a password",
+      "Patches came out Wednesday; around 70% of web-facing internet uses PHP",
+      "Cloudflare analysis reported millions of exploitation attempts within hours",
+      "Reports differ on whether successful exploitation has occurred yet"
+    ],
+    "sources": [
+      "TechCrunch",
+      "Wired"
+    ],
+    "source_links": [
+      {
+        "source": "TechCrunch",
+        "url": "https://techcrunch.com/2026/10/24/php-ocalypse-how-two-critical-web-bugs-almost-broke-the-internet/"
+      },
+      {
+        "source": "Wired",
+        "url": "https://www.wired.com/story/kernel-panic-the-php-meltdown-shows-how-ai-makes-bugs-more-exploitable/"
+      }
+    ],
+    "link": "https://techcrunch.com/2026/10/24/php-ocalypse-how-two-critical-web-bugs-almost-broke-the-internet/",
+    "instagram_post_id": "18075807533580534",
+    "instagram_posted_at": "2026-10-24T17:34:27.571372+00:00",
+    "instagram_edition": "Daily digest"
+  }
+}
