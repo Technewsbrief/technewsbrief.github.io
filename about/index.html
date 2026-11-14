@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Tech News Brief · how we work</title>
+  <meta name="description" content="How Tech News Brief chooses stories, writes its AI summaries from the original reporting, and handles corrections.">
+  <link rel="canonical" href="https://technewsbrief.net/about/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0F1525">
+  <meta property="og:title" content="About Tech News Brief">
+  <meta property="og:description" content="How we choose stories, write summaries and handle corrections.">
+  <meta property="og:image" content="https://technewsbrief.net/logo-1080.png">
+  <meta property="og:url" content="https://technewsbrief.net/about/">
+  <style>
+    /* Colours from the technews.brief logo */
+    :root { --bg: #0F1525; --bg-top: #12192C; --bg-bottom: #080C17; --card: #182039; --text: #F6F7FB;
+             --secondary: #D3D4D9; --muted: #AAADB4; --accent: #6EDEC5; --line: #26304B; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg) linear-gradient(135deg, var(--bg-top), var(--bg-bottom)) fixed; color: var(--text);
+           font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .bar { height: 6px; background: var(--accent); }
+    main { max-width: 680px; margin: 0 auto; padding: 28px 16px 48px; }
+    header h1 { margin: 0; font-size: 28px; color: var(--accent); display: flex; align-items: center; gap: 12px; }
+    header h1 img { width: 44px; height: 46px; }
+    header p { margin: 6px 0 14px; color: var(--secondary); }
+    .follow a { display: inline-block; margin: 0 8px 8px 0; padding: 8px 14px; border: 1px solid var(--accent);
+                border-radius: 999px; color: var(--accent); text-decoration: none; font-weight: 600; font-size: 14px; }
+    h2 { margin: 36px 0 12px; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; color: var(--secondary); }
+    h2.digest { color: var(--accent); }
+    article { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 12px; }
+    time { color: var(--muted); font-size: 13px; }
+    h3 { margin: 4px 0 8px; font-size: 19px; line-height: 1.3; }
+    ul { margin: 0 0 12px; padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    .sources { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .sources span { color: var(--muted); font-size: 13px; margin-right: 2px; }
+    .sources a { color: var(--bg); background: var(--accent); padding: 6px 12px; border-radius: 999px;
+                  text-decoration: none; font-weight: 600; font-size: 14px; }
+    footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+    .empty { color: var(--muted); }
+    footer a { color: var(--accent); }
+    .about h2 { margin: 32px 0 8px; font-size: 20px; letter-spacing: 0; text-transform: none; color: var(--accent); }
+    .about p, .about li { color: var(--secondary); }
+    .about a { color: var(--accent); }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+    .tags a { color: var(--secondary); border: 1px solid var(--line); padding: 3px 10px; border-radius: 999px;
+              text-decoration: none; font-size: 13px; }
+    .brand a { display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700;
+               color: var(--accent); text-decoration: none; }
+    .brand img { width: 32px; height: 34px; }
+    h1.topic { margin: 22px 0 8px; font-size: 30px; line-height: 1.2; }
+    .intro { color: var(--secondary); margin: 0 0 14px; }
+    .count { color: var(--muted); font-size: 14px; }
+    .topic-list a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+                    padding: 16px; margin-bottom: 12px; color: var(--text); text-decoration: none; }
+    .topic-list h3 { color: var(--accent); }
+    .topic-list p { margin: 0 0 6px; color: var(--secondary); }
+  </style>
+</head>
+<body>
+  <div class="bar"></div>
+  <main class="about">
+    <header>
+      <h1><img src="/logo-mark.svg" alt="">Tech News Brief</h1>
+      <div class="follow"><a href="/">Latest stories</a><a href="/topics/">Topics</a><a href="https://www.threads.com/@technews.brief" target="_blank" rel="noopener">Threads</a><a href="https://www.instagram.com/technews.brief/" target="_blank" rel="noopener">Instagram</a></div>
+    </header>
+
+    <h2>About Tech News Brief</h2>
+    <p>Tech News Brief is a short, sourced digest of the day's most important technology news. It's for
+      curious non-specialists who want the big changes and why they matter, without the noise. Our aim is
+      to be accurate, not first. It is run independently by Damien Conway in Ireland.</p>
+
+    <h2>How stories are chosen</h2>
+    <p>Several times a day we check 14 outlets: Ars Technica, BBC Technology, Engadget, Hacker News (credited to the site each item links to), IEEE Spectrum, KrebsOnSecurity, MIT Technology Review, Quanta Magazine, Rest of World, TechCrunch, The Register, The Verge, Tom&#x27;s Hardware and Wired. Articles about the same event are
+      grouped, and each event is scored for how much it matters to a general audience.</p>
+    <p>We favour AI and its effect on society and work; policy, law, privacy and security; science and big
+      engineering; and consumer tech that changes how people live or work. Minor product updates, rumours,
+      deals, reviews and opinion pieces rank low or are left out. If nothing is important enough, we post nothing.</p>
+
+    <h2>How summaries are written</h2>
+    <p>Summaries are written by AI (Anthropic's Claude) from the full text of up to three articles from
+      different outlets. The rules:</p>
+    <ul>
+      <li>Only facts stated in those articles are used, never the AI's own background knowledge.</li>
+      <li>Facts that several outlets agree on come first. A fact from a single outlet is credited to it ("according to…").</li>
+      <li>Details the outlets disagree on are left out.</li>
+      <li>If there isn't enough readable text, for example because the article is behind a paywall, the
+        story is skipped rather than guessed at.</li>
+    </ul>
+    <p>Posts are published automatically, without a person checking each one first. That's why every post
+      links to its sources: the original reporting is the authority, and we recommend reading it.</p>
+
+    <h2>Images and video</h2>
+    <p>Post images are text cards showing the headline and key points, not AI-generated pictures. Reels are
+      narrated by an AI voice and may use stock footage from Pixabay, which is labelled in the caption.</p>
+
+    <h2>What we don't do</h2>
+    <p>We don't get around paywalls, we don't copy articles, and we don't write clickbait or ask for likes.</p>
+
+    <h2>Corrections and contact</h2>
+    <p>If we get something wrong, email <a href="mailto:hello@technewsbrief.net">hello@technewsbrief.net</a> or send a
+      message to <a href="https://www.threads.com/@technews.brief" target="_blank" rel="noopener">@technews.brief on Threads</a> or
+      <a href="https://www.instagram.com/technews.brief/" target="_blank" rel="noopener">Instagram</a>, and we'll correct or remove the post.</p>
+
+    <footer>Last updated 3 November 2026.</footer>
+  </main>
+</body>
+</html>
