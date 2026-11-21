@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chips and China: semiconductors, export controls and tech restrictions · Tech News Brief</title>
+  <meta name="description" content="Advanced chips power AI, phones and data centres, and they&#x27;ve become central to tensions between China and the US, the EU and their allies. This page follows chipmaking, export controls, and other restrictions on Chinese technology and investment, along with the trade in AI hardware, with links to the original reporting.">
+  <link rel="canonical" href="https://technewsbrief.net/topics/chips-china/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0F1525">
+  <meta property="og:site_name" content="Tech News Brief">
+  <meta property="og:title" content="Chips and China: semiconductors, export controls and tech restrictions · Tech News Brief">
+  <meta property="og:description" content="Advanced chips power AI, phones and data centres, and they&#x27;ve become central to tensions between China and the US, the EU and their allies. This page follows chipmaking, export controls, and other restrictions on Chinese technology and investment, along with the trade in AI hardware, with links to the original reporting.">
+  <meta property="og:image" content="https://technewsbrief.net/logo-1080.png">
+  <meta property="og:url" content="https://technewsbrief.net/topics/chips-china/">
+  <style>
+    /* Colours from the technews.brief logo */
+    :root { --bg: #0F1525; --bg-top: #12192C; --bg-bottom: #080C17; --card: #182039; --text: #F6F7FB;
+             --secondary: #D3D4D9; --muted: #AAADB4; --accent: #6EDEC5; --line: #26304B;
+             --edge: #66728F; /* outlines of clickable chips: 3.35:1 on the card colour (WCAG 1.4.11) */ }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg) linear-gradient(135deg, var(--bg-top), var(--bg-bottom)) fixed; color: var(--text);
+           font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+    .bar { height: 6px; background: var(--accent); }
+    main { max-width: 680px; margin: 0 auto; padding: 16px 16px 48px; }
+    /* Text navigation (Latest, Topics, Archive, About); tap height 44px */
+    .topbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 20px; }
+    nav.site { display: flex; flex-wrap: wrap; gap: 0 20px; margin-left: auto; font-size: 14px; }
+    nav.site a { color: var(--secondary); text-decoration: none; padding: 12px 0; }
+    nav.site a:hover, nav.site a[aria-current] { color: var(--accent); }
+    nav.site.bottom { margin: 24px 0 0; }
+    @media (max-width: 599px) { nav.site { margin-left: 0; } }
+    header h1 { margin: 4px 0 0; font-size: 28px; color: var(--accent); display: flex; align-items: center; gap: 12px; }
+    header h1 img { width: 44px; height: 46px; }
+    header .promise { font-size: 18px; line-height: 1.45; color: var(--text); margin: 12px 0 6px; max-width: 34em; }
+    header .stance { font-size: 14px; color: var(--muted); margin: 0 0 16px; }
+    /* Buttons: the filled one is the page's main action (follow on Threads) */
+    .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button { min-height: 44px; display: inline-flex; align-items: center; border-radius: 999px; padding: 0 22px;
+              font-weight: 700; font-size: 16px; text-decoration: none; }
+    .button.primary { background: var(--accent); color: var(--bg); }
+    .button.secondary { border: 1px solid var(--accent); color: var(--accent); }
+    .follow-card { background: var(--card); border: 1px solid var(--accent); border-radius: 14px; padding: 18px 16px;
+                   margin: 4px 0 16px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
+    .follow-card p { margin: 0; color: var(--secondary); max-width: 32em; }
+    .follow-card strong { color: var(--text); display: block; font-size: 17px; }
+    h2 { margin: 36px 0 12px; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; color: var(--secondary); }
+    h2.day { color: var(--accent); }
+    .edition { margin: 0 0 8px; color: var(--muted); font-size: 13px; }
+    article { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 12px; }
+    time { color: var(--muted); font-size: 13px; }
+    h3 { margin: 4px 0 8px; font-size: 19px; line-height: 1.3; }
+    ul { margin: 0 0 12px; padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    /* Wider screens: a bigger headline, and body text sized for about 75 characters a line */
+    @media (min-width: 600px) { h3 { font-size: 22px; line-height: 1.25; } li { font-size: 17px; } }
+    .sources { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .sources span { color: var(--muted); font-size: 13px; margin-right: 2px; }
+    /* Outlined, so the headline stays the first thing on the card; filled on hover */
+    .sources a { color: var(--accent); border: 1px solid var(--accent); padding: 0 12px; min-height: 36px;
+                  display: inline-flex; align-items: center; border-radius: 999px;
+                  text-decoration: none; font-weight: 600; font-size: 14px; }
+    .sources a:hover { background: var(--accent); color: var(--bg); }
+    .end { margin-top: 28px; color: var(--secondary); }
+    .end a { color: var(--accent); }
+    footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+    .empty { color: var(--muted); }
+    footer a { color: var(--accent); }
+    .about h2 { margin: 32px 0 8px; font-size: 20px; letter-spacing: 0; text-transform: none; color: var(--accent); }
+    .about p, .about li { color: var(--secondary); }
+    .about a { color: var(--accent); }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+    .tags a { color: var(--secondary); border: 1px solid var(--edge); padding: 3px 10px; border-radius: 999px;
+              text-decoration: none; font-size: 13px; }
+    .tags a:hover { border-color: var(--accent); color: var(--accent); }
+    .brand a { display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700;
+               color: var(--accent); text-decoration: none; }
+    .brand img { width: 32px; height: 34px; }
+    h1.topic { margin: 22px 0 8px; font-size: 30px; line-height: 1.2; }
+    .intro { color: var(--secondary); margin: 0 0 14px; }
+    .count { color: var(--muted); font-size: 14px; }
+    .count a { color: var(--accent); }
+    .topic-list a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+                    padding: 16px; margin-bottom: 12px; color: var(--text); text-decoration: none; }
+    .topic-list a:hover { border-color: var(--accent); }
+    .topic-list h3 { color: var(--accent); }
+    .topic-list p { margin: 0 0 6px; color: var(--secondary); font-size: 15px; }
+  </style>
+</head>
+<body>
+  <div class="bar"></div>
+  <main>
+    <header class="topbar">
+      <div class="brand"><a href="/"><img src="/logo-mark.svg" alt="">Tech News Brief</a></div>
+      <nav class="site" aria-label="Site"><a href="/">Latest</a><a href="/topics/">Topics</a><a href="/archive/">Archive</a><a href="/about/">About</a></nav>
+    </header>
+    <h1 class="topic">Chips and China</h1>
+    <p class="intro">Advanced chips power AI, phones and data centres, and they&#x27;ve become central to tensions between China and the US, the EU and their allies. This page follows chipmaking, export controls, and other restrictions on Chinese technology and investment, along with the trade in AI hardware, with links to the original reporting.</p>
+    <p class="count">9 stories since 20 October 2026, newest first.</p>
+    <section>
+      <h2>November 2026</h2>
+      <article>
+        <time datetime="2026-11-17T12:33:19.491452+00:00">Tue 17 Nov · 12:33</time>
+        <h3>US tightens AI chip rules for data centres in five countries</h3>
+        <ul><li>Chip sales to Brazil and four South East Asian nations need US licences</li><li>Access to these data centres&#x27; computing power is restricted too</li><li>Rules aim to stop US chips being used to serve Chinese firms or smuggled</li><li>Megaspeed denies accusations it illegally smuggled Nvidia chips to China</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">BBC Technology ↗</a><a href="https://www.theregister.com/off-prem/2026/11/17/us-extends-chip-sale-restrictions-to-more-asian-countries-to-reduce-risk-of-diversion-to-china/5310307" target="_blank" rel="noopener">The Register ↗</a><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/new-us-rules-aim-to-restrict-remote-access-to-ai-servers-and-infrastructure-seeks-to-combat-cloud-rental-workarounds-to-gpu-export-controls" target="_blank" rel="noopener">Tom&#x27;s Hardware ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-13T15:33:07.885365+00:00">Fri 13 Nov · 15:33</time>
+        <h3>Megaspeed executive Alice Huang tied to banned Nvidia chips</h3>
+        <ul><li>Bloomberg reports banned Nvidia chips went to a Shanghai AI facility.</li><li>Bloomberg says the Yangtze River Delta Project has ties to Alice Huang.</li><li>US officials believe Alice Huang is a spy for China&#x27;s main intelligence agency.</li><li>Estimates put banned chips moved through her assistance at about 240,000, worth $7.5 billion.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2315710/bloomberg-details-web-of-chinese-ai-companies-with-smuggled-nvidia-chips-linked-to-alice-huang/" target="_blank" rel="noopener">Engadget ↗</a><a href="https://www.tomshardware.com/tech-industry/how-shanghai-fund-manager-kang-wei-introduced-his-wife-alice-huang-to-jensen-and-built-usd7-5-billion-nvidia-ai-gpu-smuggling-operation-mistresss-husband-joked-she-was-the-ceos-personal-assistant" target="_blank" rel="noopener">Tom&#x27;s Hardware ↗</a></div>
+        <div class="tags"><a href="/topics/ai-safety-regulation/">AI safety and regulation</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-12T18:33:05.084986+00:00">Thu 12 Nov · 18:33</time>
+        <h3>Nvidia CEO Jensen Huang resigns amid affair allegations</h3>
+        <ul><li>CFO Colette Kress named interim CEO; a permanent successor search is underway.</li><li>Reports said he had affairs with an alleged Chinese spy and a direct report.</li><li>The board&#x27;s statement thanked Huang and did not mention the accusations.</li><li>Huang had earlier admitted being unfaithful to his wife and apologised.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theverge.com/ai-artificial-intelligence/1032028/read-nvidias-internal-emails-jensen-huang" target="_blank" rel="noopener">The Verge ↗</a><a href="https://techcrunch.com/2026/11/12/jensen-huang-is-out-at-nvidia-who-is-colette-kress-his-interim-replacement/" target="_blank" rel="noopener">TechCrunch ↗</a><a href="https://www.bbc.co.uk/news/articles/ckgel338xql3o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">BBC Technology ↗</a></div>
+      </article>
+      <aside class="follow-card">
+        <p><strong>Get the next one in your feed.</strong>Follow technews.brief on Threads: up to five stories a day, every source linked.</p>
+        <a class="button primary" href="https://www.threads.com/@technews.brief" target="_blank" rel="noopener">Follow on Threads</a>
+      </aside>
+      <article>
+        <time datetime="2026-11-10T18:33:05.463789+00:00">Tue 10 Nov · 18:33</time>
+        <h3>Update: Trump says FBI probing Nvidia CEO Jensen Huang&#x27;s affair</h3>
+        <ul><li>Trump says Huang told him on Monday he had no idea she was a spy.</li><li>Trump gave no details or start date, and the FBI declined to comment to the BBC.</li><li>A California class action accuses Nvidia and Huang of defrauding shareholders.</li><li>Nvidia says it has no reason to believe its secrets were compromised.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.tomshardware.com/tech-industry/policy/president-trump-says-the-fbi-is-investigating-jensen-huangs-affair-nvidia-also-accused-of-intervening-in-megaspeed-chip-smuggling-investigation" target="_blank" rel="noopener">Tom&#x27;s Hardware ↗</a><a href="https://www.bbc.co.uk/news/articles/cqg7x7dpvym8o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">BBC Technology ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-09T18:33:37.278859+00:00">Mon 9 Nov · 18:33</time>
+        <h3>Nvidia probes CEO Jensen Huang over affair with alleged Chinese spy</h3>
+        <ul><li>Huang admitted an extramarital affair and apologised to his wife.</li><li>US intelligence believes Megaspeed executive Alice Huang was a Chinese spy.</li><li>BBC reports Nvidia shares fell Monday, wiping about $250 billion off value.</li><li>House Select Committee on China asks Huang for a closed-door briefing.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.bbc.co.uk/news/articles/c6zxjx01vyleo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">BBC Technology ↗</a><a href="https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/" target="_blank" rel="noopener">TechCrunch ↗</a><a href="https://www.tomshardware.com/tech-industry/big-tech/nvidia-ceo-jensen-huang-summoned-to-congressional-committee-over-affair-with-alleged-chinese-spy-says-recent-reports-raise-concerns-over-security-protocols-and-ties-to-chinese-intelligence" target="_blank" rel="noopener">Tom&#x27;s Hardware ↗</a></div>
+        <div class="tags"><a href="/topics/privacy-surveillance/">Privacy and surveillance</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-03T15:32:55.461829+00:00">Tue 3 Nov · 15:32</time>
+        <h3>Nvidia reportedly caps data center business with Chinese firms at 49%</h3>
+        <ul><li>FT reports Nvidia told data center customers to cap Chinese business at 49%</li><li>The policy applies globally, but only to new and future contracts</li><li>The policy was passed on by sales and regional teams, not in official documentation</li><li>Nvidia says American chips underpin US makers&#x27; ability to compete worldwide</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.tomshardware.com/tech-industry/data-centers/nvidia-tells-data-center-operators-to-limit-business-from-chinese-customers-with-new-global-restrictions-report-claims-allegedly-restricted-to-49-percent-of-the-total-ensuring-51-percent-are-non-chinese-outfits" target="_blank" rel="noopener">Tom&#x27;s Hardware ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-03T12:33:03.907955+00:00">Tue 3 Nov · 12:33</time>
+        <h3>AI chip smugglers use trade loophole to move HBM memory into China</h3>
+        <ul><li>Export rules check only the server processor, not the memory attached to it</li><li>Chips reach Shenzhen via Hong Kong, where workshops remove the memory chips</li><li>A Shenzhen broker says one HBM3E unit now costs about $4,000, up from hundreds</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.tomshardware.com/tech-industry/semiconductors/ai-chip-smugglers-exploit-trade-control-loophole-to-bring-banned-hbm-from-south-korea-into-china-expensive-memory-chips-packaged-with-cheap-unsanctioned-processors-to-become-legal-exports" target="_blank" rel="noopener">Tom&#x27;s Hardware ↗</a></div>
+      </article>
+    </section>
+    <section>
+      <h2>October 2026</h2>
+      <article>
+        <time datetime="2026-10-23T14:32:54.178184+00:00">Fri 23 Oct · 15:32</time>
+        <h3>China can make advanced chips without EUV, but at higher cost</h3>
+        <ul><li>Export controls block EUV tools, so China relies on older DUV machines.</li><li>Teardowns found Huawei&#x27;s Kirin 9000S chip was made by SMIC without EUV.</li><li>Multiple patterning adds steps, raising defect risk, time and cost.</li><li>Fractilia CTO Chris Mack doubts 3nm or 2nm nodes are viable without EUV.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.tomshardware.com/tech-industry/semiconductors/china-can-make-advanced-chips-without-euv-but-the-bill-keeps-growing-duv-multiple-patterning-means-bigger-dies-lower-yields-and-longer-manufacturing-times" target="_blank" rel="noopener">Tom&#x27;s Hardware ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-10-20T09:31:55.369983+00:00">Tue 20 Oct · 10:31</time>
+        <h3>US bans DeepSeek use across civilian federal government agencies</h3>
+        <ul><li>DHS banned all use of DeepSeek within civilian government agencies</li><li>The ban also covers technology built with the aid of DeepSeek&#x27;s AI models</li><li>Agencies within the Department of Defense are excluded from the order</li><li>Engadget reports the notice also bars DeepSeek from federal contracts</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.bbc.co.uk/news/articles/cjkgeq0k1wevo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">BBC Technology ↗</a><a href="https://www.engadget.com/2290535/homeland-security-bans-deepseek-use-in-federal-civilian-agencies/" target="_blank" rel="noopener">Engadget ↗</a></div>
+        <div class="tags"><a href="/topics/ai-safety-regulation/">AI safety and regulation</a></div>
+      </article>
+    </section>
+      <aside class="follow-card">
+        <p><strong>Get the next one in your feed.</strong>Follow technews.brief on Threads: up to five stories a day, every source linked.</p>
+        <a class="button primary" href="https://www.threads.com/@technews.brief" target="_blank" rel="noopener">Follow on Threads</a>
+      </aside>
+    <nav class="site bottom" aria-label="Site"><a href="/">Latest</a><a href="/topics/">Topics</a><a href="/archive/">Archive</a><a href="/about/">About</a></nav>
+    <footer>
+      Tech News Brief is run by Damien Conway in Ireland. Summaries are written by AI from the linked articles and
+      published automatically, without a person checking each one first. Read the original reporting for
+      the full story. <a href="/about/">How we work</a> · Updated Sat 21 Nov 2026, 15:41 (Dublin).
+    </footer>
+  </main>
+</body>
+</html>

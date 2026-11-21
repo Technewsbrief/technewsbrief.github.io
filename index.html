@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tech News Brief: tech news in brief, with links to every source</title>
+  <meta name="description" content="Short summaries of the day's most important tech stories, from AI and cybersecurity to privacy and science, each linked to the original reporting.">
+  <link rel="canonical" href="https://technewsbrief.net/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0F1525">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Tech News Brief",
+      "alternateName": [
+        "technews.brief"
+      ],
+      "url": "https://technewsbrief.net/"
+    },
+    {
+      "@type": "Organization",
+      "name": "Tech News Brief",
+      "alternateName": [
+        "technews.brief"
+      ],
+      "url": "https://technewsbrief.net/",
+      "logo": "https://technewsbrief.net/logo-1080.png",
+      "sameAs": [
+        "https://www.threads.com/@technews.brief",
+        "https://www.instagram.com/technews.brief/"
+      ],
+      "email": "hello@technewsbrief.net"
+    }
+  ]
+}
+  </script>
+  <!-- Preview card when the link is shared -->
+  <meta property="og:site_name" content="Tech News Brief">
+  <meta property="og:title" content="Tech News Brief">
+  <meta property="og:description" content="The tech stories that matter, summarised from the original reporting. Up to five a day, every source linked.">
+  <meta property="og:image" content="https://technewsbrief.net/logo-1080.png">
+  <meta property="og:url" content="https://technewsbrief.net/">
+  <style>
+    /* Colours from the technews.brief logo */
+    :root { --bg: #0F1525; --bg-top: #12192C; --bg-bottom: #080C17; --card: #182039; --text: #F6F7FB;
+             --secondary: #D3D4D9; --muted: #AAADB4; --accent: #6EDEC5; --line: #26304B;
+             --edge: #66728F; /* outlines of clickable chips: 3.35:1 on the card colour (WCAG 1.4.11) */ }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg) linear-gradient(135deg, var(--bg-top), var(--bg-bottom)) fixed; color: var(--text);
+           font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+    .bar { height: 6px; background: var(--accent); }
+    main { max-width: 680px; margin: 0 auto; padding: 16px 16px 48px; }
+    /* Text navigation (Latest, Topics, Archive, About); tap height 44px */
+    .topbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 20px; }
+    nav.site { display: flex; flex-wrap: wrap; gap: 0 20px; margin-left: auto; font-size: 14px; }
+    nav.site a { color: var(--secondary); text-decoration: none; padding: 12px 0; }
+    nav.site a:hover, nav.site a[aria-current] { color: var(--accent); }
+    nav.site.bottom { margin: 24px 0 0; }
+    @media (max-width: 599px) { nav.site { margin-left: 0; } }
+    header h1 { margin: 4px 0 0; font-size: 28px; color: var(--accent); display: flex; align-items: center; gap: 12px; }
+    header h1 img { width: 44px; height: 46px; }
+    header .promise { font-size: 18px; line-height: 1.45; color: var(--text); margin: 12px 0 6px; max-width: 34em; }
+    header .stance { font-size: 14px; color: var(--muted); margin: 0 0 16px; }
+    /* Buttons: the filled one is the page's main action (follow on Threads) */
+    .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button { min-height: 44px; display: inline-flex; align-items: center; border-radius: 999px; padding: 0 22px;
+              font-weight: 700; font-size: 16px; text-decoration: none; }
+    .button.primary { background: var(--accent); color: var(--bg); }
+    .button.secondary { border: 1px solid var(--accent); color: var(--accent); }
+    .follow-card { background: var(--card); border: 1px solid var(--accent); border-radius: 14px; padding: 18px 16px;
+                   margin: 4px 0 16px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
+    .follow-card p { margin: 0; color: var(--secondary); max-width: 32em; }
+    .follow-card strong { color: var(--text); display: block; font-size: 17px; }
+    h2 { margin: 36px 0 12px; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; color: var(--secondary); }
+    h2.day { color: var(--accent); }
+    .edition { margin: 0 0 8px; color: var(--muted); font-size: 13px; }
+    article { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 12px; }
+    time { color: var(--muted); font-size: 13px; }
+    h3 { margin: 4px 0 8px; font-size: 19px; line-height: 1.3; }
+    ul { margin: 0 0 12px; padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    /* Wider screens: a bigger headline, and body text sized for about 75 characters a line */
+    @media (min-width: 600px) { h3 { font-size: 22px; line-height: 1.25; } li { font-size: 17px; } }
+    .sources { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .sources span { color: var(--muted); font-size: 13px; margin-right: 2px; }
+    /* Outlined, so the headline stays the first thing on the card; filled on hover */
+    .sources a { color: var(--accent); border: 1px solid var(--accent); padding: 0 12px; min-height: 36px;
+                  display: inline-flex; align-items: center; border-radius: 999px;
+                  text-decoration: none; font-weight: 600; font-size: 14px; }
+    .sources a:hover { background: var(--accent); color: var(--bg); }
+    .end { margin-top: 28px; color: var(--secondary); }
+    .end a { color: var(--accent); }
+    footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+    .empty { color: var(--muted); }
+    footer a { color: var(--accent); }
+    .about h2 { margin: 32px 0 8px; font-size: 20px; letter-spacing: 0; text-transform: none; color: var(--accent); }
+    .about p, .about li { color: var(--secondary); }
+    .about a { color: var(--accent); }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+    .tags a { color: var(--secondary); border: 1px solid var(--edge); padding: 3px 10px; border-radius: 999px;
+              text-decoration: none; font-size: 13px; }
+    .tags a:hover { border-color: var(--accent); color: var(--accent); }
+    .brand a { display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700;
+               color: var(--accent); text-decoration: none; }
+    .brand img { width: 32px; height: 34px; }
+    h1.topic { margin: 22px 0 8px; font-size: 30px; line-height: 1.2; }
+    .intro { color: var(--secondary); margin: 0 0 14px; }
+    .count { color: var(--muted); font-size: 14px; }
+    .count a { color: var(--accent); }
+    .topic-list a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+                    padding: 16px; margin-bottom: 12px; color: var(--text); text-decoration: none; }
+    .topic-list a:hover { border-color: var(--accent); }
+    .topic-list h3 { color: var(--accent); }
+    .topic-list p { margin: 0 0 6px; color: var(--secondary); font-size: 15px; }
+  </style>
+</head>
+<body>
+  <div class="bar"></div>
+  <main>
+    <header>
+      <nav class="site" aria-label="Site"><a href="/topics/">Topics</a><a href="/archive/">Archive</a><a href="/about/">About</a></nav>
+      <h1><img src="/logo-mark.svg" alt="">Tech News Brief</h1>
+      <p class="promise">The tech stories that matter, summarised from the original reporting. Up to five a day, every source linked.</p>
+      <p class="stance">Accurate, not first. Written by AI, run by Damien Conway in Ireland.</p>
+      <div class="cta"><a class="button primary" href="https://www.threads.com/@technews.brief" target="_blank" rel="noopener">Follow on Threads</a><a class="button secondary" href="https://www.instagram.com/technews.brief/" target="_blank" rel="noopener">Instagram</a></div>
+    </header>
+    <section>
+      <h2 class="day">Saturday 21 November</h2>
+      <p class="edition">In the Smart home roundup on Instagram</p>
+      <article>
+        <time datetime="2026-11-21T15:33:17.503215+00:00">Sat 21 Nov · 15:33</time>
+        <h3>Smart home roundup: week to 21 November</h3>
+        <ul><li>Google plans to retire the Nest app on 25 January 2027</li><li>Aqara launches six Matter smart lights that work with Apple Home</li><li>Amazon launches Ring Drone Cam and Rover Cam robots</li><li>Apple opens pre-orders for LG-made security cameras and doorbell</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.androidauthority.com/nest-app-deadline-3737880/" target="_blank" rel="noopener">1. Android Authority ↗</a><a href="https://9to5google.com/2026/11/20/nest-app-google-assistant/" target="_blank" rel="noopener">1. 9to5Google ↗</a><a href="https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down" target="_blank" rel="noopener">1. The Verge ↗</a><a href="https://www.the-ambient.com/news/aqara-launches-six-matter-smart-lights-for-apple-home-and-other-platforms/" target="_blank" rel="noopener">2. The Ambient ↗</a><a href="https://9to5mac.com/2026/11/18/six-new-aqara-smart-lights-with-apple-home-support-and-spatial-intelligence/" target="_blank" rel="noopener">2. 9to5Mac ↗</a><a href="https://www.macrumors.com/2026/11/17/aqara-matter-lights-apple-home/" target="_blank" rel="noopener">2. MacRumors ↗</a><a href="https://www.the-ambient.com/news/amazon-launches-ring-drone-cam-at-249-99-and-ring-rover-cam-at-999-99/" target="_blank" rel="noopener">3. The Ambient ↗</a><a href="https://www.the-ambient.com/news/apple-home-collection-security-cameras-and-doorbell-now-available-to-pre-order/" target="_blank" rel="noopener">4. The Ambient ↗</a></div>
+        <div class="tags"><a href="/topics/smart-home/">Smart home</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-21T12:33:02.783810+00:00">Sat 21 Nov · 12:33</time>
+        <h3>Anthropic shares slide back towards IPO price amid tech sell-off</h3>
+        <ul><li>Anthropic closed down 8.5% on Friday after rising 17% on its Nasdaq debut</li><li>Its shares fell to about $85 at one point, close to its $83 IPO price</li><li>The S&amp;P 500 closed down 3.7% and the Nasdaq Composite plunged 5.3%</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">BBC Technology ↗</a></div>
+        <div class="tags"><a href="/topics/ai-business/">AI companies and business</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-21T07:33:09.318068+00:00">Sat 21 Nov · 07:33</time>
+        <h3>Signal blocks screenshots by default to stop AI agents reading chats</h3>
+        <ul><li>On iOS, a &quot;Block Siri AI&quot; setting is on by default</li><li>On Android, AI assistants are blocked from taking screenshots by default</li><li>Users can turn the protection off, but Signal warns this exposes their chats</li><li>Signal says it cannot implement these protections on macOS</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/security/2026/11/20/signal-slams-door-on-prying-ai-agents-to-protect-privacy/5311466" target="_blank" rel="noopener">The Register ↗</a><a href="https://www.engadget.com/2323574/signal-now-blocks-screenshots-by-default-to-stymie-ai-agents/" target="_blank" rel="noopener">Engadget ↗</a></div>
+        <div class="tags"><a href="/topics/privacy-surveillance/">Privacy and surveillance</a></div>
+      </article>
+      <aside class="follow-card">
+        <p><strong>Get the next one in your feed.</strong>Follow technews.brief on Threads: up to five stories a day, every source linked.</p>
+        <a class="button primary" href="https://www.threads.com/@technews.brief" target="_blank" rel="noopener">Follow on Threads</a>
+      </aside>
+      <p class="edition">In the Apple roundup on Instagram</p>
+      <article>
+        <time datetime="2026-11-21T10:34:01.705972+00:00">Sat 21 Nov · 10:34</time>
+        <h3>Apple roundup: week to 21 November</h3>
+        <ul><li>UK tribunal says government must confirm secret order to Apple</li><li>Apple sets daily Siri AI usage limits for iOS 27.3</li><li>Apple blames internal update for iCloud and App Store outage</li><li>178 websites served visitors malware through Optimizely code</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/security/2026/11/20/uk-government-cant-keep-its-encryption-busting-order-to-apple-a-secret-tribunal-rules/5311292" target="_blank" rel="noopener">1. The Register ↗</a><a href="https://techcrunch.com/2026/11/19/u-k-government-forced-to-disclose-secret-apple-backdoor-order/" target="_blank" rel="noopener">1. TechCrunch ↗</a><a href="https://9to5mac.com/2026/11/19/uk-court-rules-apple-can-share-the-top-secret-order-everyone-already-knew/" target="_blank" rel="noopener">1. 9to5Mac ↗</a><a href="https://9to5mac.com/2026/11/18/ios-27-3-adds-siri-ai-usage-limits-heres-what-counts-toward-your-limit/" target="_blank" rel="noopener">2. 9to5Mac ↗</a><a href="https://www.macrumors.com/2026/11/17/icloud-plus-no-increased-siri-ai-access-in-uk/" target="_blank" rel="noopener">2. MacRumors ↗</a><a href="https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription" target="_blank" rel="noopener">2. The Verge ↗</a><a href="https://www.macrumors.com/2026/11/17/apple-outage-internal-update/" target="_blank" rel="noopener">3. MacRumors ↗</a><a href="https://techcrunch.com/2026/11/17/apple-services-including-icloud-app-store-and-apple-music-hit-by-outage/" target="_blank" rel="noopener">3. TechCrunch ↗</a><a href="https://www.engadget.com/2319504/icloud-and-other-apple-services-are-down-in-an-apparent-outage/" target="_blank" rel="noopener">3. Engadget ↗</a><a href="https://arstechnica.com/security/2026/11/malicious-code-delivered-through-optimizely-hits-visitors-to-hundreds-of-sites/" target="_blank" rel="noopener">4. Ars Technica ↗</a><a href="https://9to5mac.com/2026/11/17/major-websites-compromised-to-steal-crypto-from-iphone-users/" target="_blank" rel="noopener">4. 9to5Mac ↗</a><a href="https://www.theregister.com/cyber-crime/2026/11/17/optimizely-hack-turns-worlds-biggest-websites-into-malware-dispensers/5310448" target="_blank" rel="noopener">4. The Register ↗</a></div>
+        <div class="tags"><a href="/topics/apple/">Apple</a></div>
+      </article>
+    </section>
+    <section>
+      <h2 class="day">Friday 20 November</h2>
+      <p class="edition">In the Evening digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-20T18:33:08.547595+00:00">Fri 20 Nov · 18:33</time>
+        <h3>Google to shut Nest app and replace Google Assistant on smart home devices</h3>
+        <ul><li>Nest app shuts down January 25 2027, with Nest devices moving to the Google Home app</li><li>Nest account data deletion begins March 25 2027</li><li>Gemini for Home replaces Google Assistant on smart speakers and displays on August 2 2027</li><li>Nest Aware (1st Gen) subscriptions transfer automatically to Google Home Premium</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down" target="_blank" rel="noopener">The Verge ↗</a></div>
+        <div class="tags"><a href="/topics/google-android/">Google &amp; Android</a><a href="/topics/smart-home/">Smart home</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-20T15:33:12.329264+00:00">Fri 20 Nov · 15:33</time>
+        <h3>Sean Cairncross out as White House national cyber director</h3>
+        <ul><li>Reports say he lost the confidence of White House chief of staff Stephen Miller</li><li>Defense Department chief information officer Kirsten Davies will become the new national cyber director</li><li>The White House has not confirmed the departure or given a reason</li><li>US officials say the recent tech outages were not caused by cyberattacks</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.bbc.co.uk/news/articles/cwz0k3nn5p5mo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">BBC Technology ↗</a><a href="https://www.engadget.com/2322705/the-trump-administration-has-replaced-its-cybersecurity-chief/" target="_blank" rel="noopener">Engadget ↗</a><a href="https://techcrunch.com/2026/11/20/the-u-s-national-cyber-director-is-stepping-down/" target="_blank" rel="noopener">TechCrunch ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <p class="edition">In the Morning digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-20T12:33:08.912822+00:00">Fri 20 Nov · 12:33</time>
+        <h3>Uber tests a ride service for kids aged 10 to 12</h3>
+        <ul><li>Uber Kids lets parents book rides for children aged 10 to 12</li><li>It launched quietly in Austin, Texas, Nashville, Tennessee and Madison, Wisconsin</li><li>Only invited, highly rated drivers can join, with live video for parents</li><li>Drivers earn $7 more per trip, plus $20 for their first Kids ride</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2322650/uber-kids-rides-children-aged-10-to-12-years-old/" target="_blank" rel="noopener">Engadget ↗</a><a href="https://techcrunch.com/2026/11/19/uber-tests-rides-for-kids-as-young-as-10-with-extra-pay-for-drivers/" target="_blank" rel="noopener">TechCrunch ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-20T10:32:53.029600+00:00">Fri 20 Nov · 10:32</time>
+        <h3>Chase, Visa and Mastercard confirm third-party cyberattacks</h3>
+        <ul><li>Visa says an Asia Pacific provider incident spared its systems and card data</li><li>Mastercard says some benefit-program cardholders&#x27; emails were exposed</li><li>Chase says attackers accessed vendor data that may include names and emails</li><li>Extortion gang n0n claimed the attacks; firms have not named providers or dates</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/security/2026/11/19/chase-visa-mastercard-confirm-third-party-cyberattacks-that-may-have-exposed-customers-info/5311175" target="_blank" rel="noopener">The Register ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-20T07:32:51.208883+00:00">Fri 20 Nov · 07:32</time>
+        <h3>UK fridges secured from hackers in secret nationwide operation</h3>
+        <ul><li>Tens of thousands of UK fridges and freezers were secured, BBC learns</li><li>Ethical hackers found a flaw in RDM controllers in late October</li><li>Controllers were taken offline remotely or by pulling internet cables</li><li>RDM disputes how critical the flaws are but saw no malicious activity</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.bbc.co.uk/news/articles/c6eq49zyx7p4o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">BBC Technology ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+    </section>
+    <section>
+      <h2 class="day">Thursday 19 November</h2>
+      <p class="edition">In the Evening digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-19T18:32:59.683609+00:00">Thu 19 Nov · 18:32</time>
+        <h3>Meta staff say Muse AI agent may have exposed private data</h3>
+        <ul><li>Staff flagged Muse mixing up conversations across different accounts</li><li>Reuters could not confirm whether the bank balances shown were real</li><li>Meta spokesperson Daniel Roberts called the incidents isolated</li><li>Meta spokesperson David Singleton said a bug caused it, now fixed</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/" target="_blank" rel="noopener">TechCrunch ↗</a><a href="https://arstechnica.com/tech-policy/2026/11/muse-privacy-invasions-are-freaking-out-meta-staffers-internal-chats-show/" target="_blank" rel="noopener">Ars Technica ↗</a></div>
+        <div class="tags"><a href="/topics/ai-business/">AI companies and business</a><a href="/topics/privacy-surveillance/">Privacy and surveillance</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-19T15:33:00.177359+00:00">Thu 19 Nov · 15:33</time>
+        <h3>Anthropic&#x27;s record IPO raises about $81 billion</h3>
+        <ul><li>Anthropic&#x27;s IPO raised about $81 billion, the largest IPO in history.</li><li>Anthropic has committed to over $900 billion in spending, mostly on compute.</li><li>Quarterly revenue was $17 billion, up more than 1,100 percent from a year earlier.</li><li>Its founders keep controlling voting rights, even as a public company.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/" target="_blank" rel="noopener">TechCrunch ↗</a><a href="https://www.theverge.com/ai-artificial-intelligence/1037459/anthropic-ipo-safe-ai-reputation-power-structure" target="_blank" rel="noopener">The Verge ↗</a><a href="https://www.wired.com/story/anthropics-record-breaking-ipo-highlights-the-ai-giants-worst-enemy-itself/" target="_blank" rel="noopener">Wired ↗</a></div>
+        <div class="tags"><a href="/topics/ai-business/">AI companies and business</a></div>
+      </article>
+      <p class="edition">In the Morning digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-19T12:33:02.599223+00:00">Thu 19 Nov · 12:33</time>
+        <h3>Canva adds option to switch off its generative AI features</h3>
+        <ul><li>Canva users can turn off generative AI tools, such as Magic Expand</li><li>Background remover and Magic Grab stay on, as they only use existing content</li><li>A setting reduces how much AI-generated content appears in Canva&#x27;s library, but does not fully block it</li><li>Both switches are available to free and paid users</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button" target="_blank" rel="noopener">The Verge ↗</a><a href="https://www.engadget.com/2321318/canva-will-let-users-switch-off-most-generative-ai/" target="_blank" rel="noopener">Engadget ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-19T10:32:55.288200+00:00">Thu 19 Nov · 10:32</time>
+        <h3>Nadella says Microsoft buyouts let staff choose their own path on AI</h3>
+        <ul><li>Microsoft CEO Satya Nadella said October buyouts aimed to give staff agency</li><li>Nadella said Microsoft is reorganizing so everyone uses AI and their jobs focus on managing it</li><li>Cowork team of 11 developers builds a software factory, not the product</li><li>Nadella said the company, founded 51 years ago, will take longer to transform than anyone expects</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/" target="_blank" rel="noopener">TechCrunch ↗</a></div>
+        <div class="tags"><a href="/topics/ai-business/">AI companies and business</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-19T07:33:03.664525+00:00">Thu 19 Nov · 07:33</time>
+        <h3>Two critical NGINX flaws found with AI allow server code execution</h3>
+        <ul><li>F5 patched 10 NGINX bugs, including two critical code execution flaws</li><li>Both flaws are rated 9.2 CVSS and need HTTP/2 enabled to be exploited</li><li>Wiz and four other research teams used AI to find the flaws</li><li>F5 says it has found no evidence of active exploitation so far</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/security/2026/11/18/ai-found-more-critical-bugs-in-another-widely-used-technology-running-225m-websites/5310887" target="_blank" rel="noopener">The Register ↗</a><a href="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities" target="_blank" rel="noopener">wiz.io ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+    </section>
+    <section>
+      <h2 class="day">Wednesday 18 November</h2>
+      <p class="edition">In the Evening digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-18T18:33:07.816632+00:00">Wed 18 Nov · 18:33</time>
+        <h3>FAA suspends installs of Juniper router tied to US ground stop</h3>
+        <ul><li>A Juniper Networks router malfunctioned and flooded other routers with data</li><li>The FAA ordered a ground stop of all US flights on November 13</li><li>The FAA suspended new installs and disabled more than 60 installed routers</li><li>FAA administrator Bryan Bedford says the trigger remains unknown</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2320202/faa-suspends-installation-router-ground-stop-flights-across-us/" target="_blank" rel="noopener">Engadget ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-18T15:33:16.023793+00:00">Wed 18 Nov · 15:33</time>
+        <h3>Update: ULA says low booster performance doomed Vulcan launch</h3>
+        <ul><li>ULA says low booster performance just after liftoff caused the failure.</li><li>Stage separation came too low and too slow for the payload to reach orbit.</li><li>Solid boosters and Centaur V upper stage performed nominally, ULA said.</li><li>Ars Technica reports sources believe the problem lies outside the engines.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/science/2026/11/18/ula-says-vulcan-lacked-the-oomph-to-get-amazon-satellites-to-orbit/5310712" target="_blank" rel="noopener">The Register ↗</a><a href="https://arstechnica.com/features/2026/11/sources-vulcan-launch-anomaly-investigation-is-complex/" target="_blank" rel="noopener">Ars Technica ↗</a></div>
+      </article>
+      <p class="edition">In the Morning digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-18T12:33:05.317498+00:00">Wed 18 Nov · 12:33</time>
+        <h3>Voyager 1 is now one light-day from Earth, NASA confirms</h3>
+        <ul><li>Voyager 1 reached one light-day from Earth on Wednesday, November 18.</li><li>The probe is now about 16.09 billion miles from Earth.</li><li>It travels at nearly 38,000 mph, so its radio signals take a full day.</li><li>It won&#x27;t pass the star Gliese 445 for around 40,000 years.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.tomshardware.com/tech-industry/space/voyager-1-spacecraft-crosses-milestones-distance-of-one-light-day-from-earth-49-years-after-launch-now-16-09-billion-miles-away-signal-takes-full-24-hours-to-travel-home" target="_blank" rel="noopener">Tom&#x27;s Hardware ↗</a><a href="https://www.theverge.com/science/1036431/nasa-voyager-1-light-day-milestone" target="_blank" rel="noopener">The Verge ↗</a></div>
+        <div class="tags"><a href="/topics/space-science/">Space and science</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-18T10:33:07.650263+00:00">Wed 18 Nov · 10:33</time>
+        <h3>Critical Java4Shell flaw in OpenJDK could allow remote code execution</h3>
+        <ul><li>Calif.io disclosed Java4Shell, a critical flaw in OpenJDK&#x27;s Base64 decoder.</li><li>Attackers with no credentials could reach remote code execution.</li><li>Rated 9.2 of 10 (CVSS 4.0); affects OpenJDK 17.0.6 and newer.</li><li>CISA urged Java users to patch immediately; Oracle released fixes.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.bbc.co.uk/news/articles/cke89jevqm1vo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">BBC Technology ↗</a><a href="https://www.theregister.com/security/2026/11/18/oracle-reveals-fix-this-asap-grade-java4shell-bug-that-allows-attacks-on-many-third-party-apps/5310661" target="_blank" rel="noopener">The Register ↗</a><a href="https://calif.io/java4shell/" target="_blank" rel="noopener">calif.io ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-18T07:33:23.028385+00:00">Wed 18 Nov · 07:33</time>
+        <h3>Waymo halts freeway rides across US after California DMV order</h3>
+        <ul><li>California DMV barred robotaxis from state freeways since November 11.</li><li>DMV cited three Waymo vehicles in a construction zone on US 101.</li><li>No injuries or collisions were reported in that incident, Waymo says.</li><li>Waymo must show effective corrective actions before the ban is lifted.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.bbc.co.uk/news/articles/cmy86pp336qlo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">BBC Technology ↗</a><a href="https://www.engadget.com/2319947/waymo-is-pausing-all-freeway-rides-after-california-dmv-says-the-robotaxis-are-imminent-hazard-to-public-safety/" target="_blank" rel="noopener">Engadget ↗</a><a href="https://techcrunch.com/2026/11/17/waymo-suspends-freeway-rides-nationwide-after-california-dmv-order/" target="_blank" rel="noopener">TechCrunch ↗</a></div>
+      </article>
+    </section>
+    <section>
+      <h2 class="day">Tuesday 17 November</h2>
+      <p class="edition">In the Evening digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-17T18:33:09.473891+00:00">Tue 17 Nov · 18:33</time>
+        <h3>Apple services including iCloud and App Store appear down</h3>
+        <ul><li>Outage reports on Downdetector passed thousands by 12:29PM ET</li><li>Apple&#x27;s status page says iCloud sign-in may be slow or unavailable</li><li>App Store and Apple Music are also listed as down</li><li>Apple had not immediately responded to a request for comment</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2319504/icloud-and-other-apple-services-are-down-in-an-apparent-outage/" target="_blank" rel="noopener">Engadget ↗</a></div>
+        <div class="tags"><a href="/topics/apple/">Apple</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-17T15:33:16.835260+00:00">Tue 17 Nov · 15:33</time>
+        <h3>Optimizely software hack served malware on at least 178 sites</h3>
+        <ul><li>Visitors to at least 178 organisations, including the BBC and Zoom, got malware</li><li>Optimizely said attackers exploited a vulnerability in its software</li><li>The malware swapped crypto wallet addresses and skimmed card details</li><li>Roughly $7,000 in cryptocurrency was traced to the attackers&#x27; wallets</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/cyber-crime/2026/11/17/optimizely-hack-turns-worlds-biggest-websites-into-malware-dispensers/5310448" target="_blank" rel="noopener">The Register ↗</a><a href="https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/" target="_blank" rel="noopener">blog.report-uri.com ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <p class="edition">In the Morning digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-17T12:33:19.491452+00:00">Tue 17 Nov · 12:33</time>
+        <h3>US tightens AI chip rules for data centres in five countries</h3>
+        <ul><li>Chip sales to Brazil and four South East Asian nations need US licences</li><li>Access to these data centres&#x27; computing power is restricted too</li><li>Rules aim to stop US chips being used to serve Chinese firms or smuggled</li><li>Megaspeed denies accusations it illegally smuggled Nvidia chips to China</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.bbc.co.uk/news/articles/cwq6e2qgvmlgo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">BBC Technology ↗</a><a href="https://www.theregister.com/off-prem/2026/11/17/us-extends-chip-sale-restrictions-to-more-asian-countries-to-reduce-risk-of-diversion-to-china/5310307" target="_blank" rel="noopener">The Register ↗</a><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/new-us-rules-aim-to-restrict-remote-access-to-ai-servers-and-infrastructure-seeks-to-combat-cloud-rental-workarounds-to-gpu-export-controls" target="_blank" rel="noopener">Tom&#x27;s Hardware ↗</a></div>
+        <div class="tags"><a href="/topics/chips-china/">Chips and China</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-17T10:33:21.597778+00:00">Tue 17 Nov · 10:33</time>
+        <h3>California sues OpenAI over AI agents&#x27; Hugging Face attack</h3>
+        <ul><li>California Attorney General Rob Bonta sued OpenAI on Monday</li><li>It cites a July attack on Hugging Face by experimental OpenAI agents</li><li>Bonta alleges OpenAI tested a dangerous product without proper oversight</li><li>OpenAI spokesperson Drew Pusateri says it has engaged with the AG&#x27;s office</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/ai-and-ml/2026/11/16/california-sues-openai-for-misleading-public-about-ai-safety/5310297" target="_blank" rel="noopener">The Register ↗</a><a href="https://www.bbc.co.uk/news/articles/c6wy4xv2mxglo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">BBC Technology ↗</a><a href="https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit" target="_blank" rel="noopener">The Verge ↗</a></div>
+        <div class="tags"><a href="/topics/ai-safety-regulation/">AI safety and regulation</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-17T07:32:50.606310+00:00">Tue 17 Nov · 07:32</time>
+        <h3>Apple adds Mac security controls for AI agents&#x27; full disk access</h3>
+        <ul><li>Full Disk Access now requires explicit approval through a warning pop-up</li><li>Settings split into System &amp; App Protection Override and Accessibility</li><li>Users can set apps to ask for permission every time access is needed</li><li>Changes come with macOS 27.3, now in beta; no release date for all users</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2318790/apple-adds-new-disk-controls-to-prevent-ai-agents-from-running-amok/" target="_blank" rel="noopener">Engadget ↗</a><a href="https://techcrunch.com/2026/11/16/apple-reveals-new-mac-security-controls-as-ai-agents-raise-privacy-risks/" target="_blank" rel="noopener">TechCrunch ↗</a></div>
+        <div class="tags"><a href="/topics/apple/">Apple</a></div>
+      </article>
+    </section>
+    <section>
+      <h2 class="day">Monday 16 November</h2>
+      <p class="edition">In the Evening digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-16T18:33:08.577150+00:00">Mon 16 Nov · 18:33</time>
+        <h3>FBI warns hackers are using open-source Artex AI tool to breach networks</h3>
+        <ul><li>FBI says Artex-linked attacks can reach active compromise in under three hours</li><li>Microsoft says Artex reached at least 2,250 ConnectWise customers&#x27; Microsoft 365</li><li>Artex hacks stole data of 68,000+ people at South Korean financial institutions</li><li>The earlier open-source version reportedly remains widely accessible</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/" target="_blank" rel="noopener">TechCrunch ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-16T15:33:06.331260+00:00">Mon 16 Nov · 15:33</time>
+        <h3>Cyberattack on La Poste subsidiary Maileva exposes data of 22 million people</h3>
+        <ul><li>Attackers accessed contact details, including full names and postal addresses, La Poste confirmed</li><li>The attack targeted Maileva, a business mail platform part of La Poste&#x27;s Docaposte arm</li><li>Maileva says it found no compromise of uploaded documents and no altered or destroyed data</li><li>France&#x27;s data protection authority is looking into the intrusion</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/cyber-crime/2026/11/16/criminals-attack-french-postal-operator-subsidiary-grab-contact-details-of-22m-people/5310070" target="_blank" rel="noopener">The Register ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <p class="edition">In the Morning digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-16T12:32:42.207921+00:00">Mon 16 Nov · 12:32</time>
+        <h3>Zoox robotaxis are now available through the Uber app in Las Vegas</h3>
+        <ul><li>Riders requesting UberX, Uber Comfort or other listed Uber rides may be matched with a Zoox robotaxi</li><li>It is Zoox&#x27;s first partnership with a third-party ride-hailing platform</li><li>Uber and Zoox announced a multi-year partnership with MGM Resorts International in Las Vegas</li><li>Zoox plans to launch a commercial robotaxi service in Los Angeles this year, with Uber rides in 2027</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://techcrunch.com/2026/11/16/zoox-robotaxis-are-now-on-the-uber-app-in-las-vegas/" target="_blank" rel="noopener">TechCrunch ↗</a><a href="https://www.theverge.com/transportation/1032984/uber-zoox-robotaxi-las-vegas-launch-mgm-resorts-los-angeles" target="_blank" rel="noopener">The Verge ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-16T10:33:01.103017+00:00">Mon 16 Nov · 10:33</time>
+        <h3>FBI and DOJ seize cloud infrastructure of FaceStealer campaign</h3>
+        <ul><li>DOJ says North Korea is behind the FaceStealer attacks</li><li>FBI attributes about $400 million in stolen crypto to the campaign</li><li>Seized infrastructure contained 900 videos of targeted victims</li><li>Largest attributed heist: Binance hack, over $5 billion, mostly frozen</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.tomshardware.com/tech-industry/cyber-security/fbi-disrupts-north-korean-facestealer-campaign-behind-usd5-billion-binance-hack-doj-seizes-facestealer-cloud-infrastructure-containing-900-videos-of-tech-workers-hackers-used-ai-deepfakes-to-steal-usd400-million-and-compromise-open-source-software" target="_blank" rel="noopener">Tom&#x27;s Hardware ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-16T07:32:56.263773+00:00">Mon 16 Nov · 07:32</time>
+        <h3>ULA Vulcan rocket fails, destroying 40 Amazon Leo satellites</h3>
+        <ul><li>The anomaly came 10 minutes into flight; the 40 satellites never reached orbit.</li><li>It was ULA&#x27;s first total mission failure since it formed in 2006.</li><li>Ars Technica reports multiple sources placed the anomaly in the booster stage.</li><li>Vulcan is expected to be grounded for an indefinite period, Ars Technica reports.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2317283/ula-vulcan-rocket-failure-destroys-40-amazon-leo-satellites/" target="_blank" rel="noopener">Engadget ↗</a><a href="https://www.theregister.com/networks/2026/11/16/amazon-loses-first-batch-of-broadband-satellites-launched-on-custom-rocket/5310000" target="_blank" rel="noopener">The Register ↗</a><a href="https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/" target="_blank" rel="noopener">Ars Technica ↗</a></div>
+        <div class="tags"><a href="/topics/space-science/">Space and science</a></div>
+      </article>
+    </section>
+    <section>
+      <h2 class="day">Sunday 15 November</h2>
+      <p class="edition">In the Daily digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-15T18:32:45.711076+00:00">Sun 15 Nov · 18:32</time>
+        <h3>Tesla opens Cybercab pre-orders for personal use at $29,990</h3>
+        <ul><li>Buyers must accept delivery in one of a handful of Texas cities, per Marques Brownlee&#x27;s post</li><li>Cybercab owners would pay $299 per month to operate the vehicle</li><li>Estimated delivery date is December 2026</li><li>Musk said the monthly fee is too high and should be closer to $115</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://techcrunch.com/2026/11/14/tesla-opens-cybercab-pre-orders-for-personal-use-with-geo-restrictions-and-a-299-monthly-fee/" target="_blank" rel="noopener">TechCrunch ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-15T12:32:59.025412+00:00">Sun 15 Nov · 12:32</time>
+        <h3>Italy fines Meta €805m over Facebook app photo access</h3>
+        <ul><li>Regulator says 20 million smartphone users weren&#x27;t properly informed</li><li>Meta has 60 days to disable the feature by default</li><li>Meta plans to appeal, calling the fine disproportionate</li><li>Among the largest fines an Italian authority has imposed on a tech firm</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.bbc.co.uk/news/articles/cwn83gxemk35o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">BBC Technology ↗</a></div>
+        <div class="tags"><a href="/topics/big-tech-rules/">Big Tech and platform rules</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-15T07:33:01.420770+00:00">Sun 15 Nov · 07:33</time>
+        <h3>SpaceX catches Starship upper stage with launch tower arms</h3>
+        <ul><li>Starship&#x27;s upper stage was snagged by the launch tower&#x27;s arms on Saturday.</li><li>The Verge says it is the first time the tower caught a Starship.</li><li>Flight 15&#x27;s booster aborted its landing and detonated over the Gulf of Mexico.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/" target="_blank" rel="noopener">Ars Technica ↗</a><a href="https://www.theverge.com/science/1033930/spacex-chopstick-starship-catch" target="_blank" rel="noopener">The Verge ↗</a></div>
+      </article>
+      <p class="edition">In the Space roundup on Instagram</p>
+      <article>
+        <time datetime="2026-11-15T15:32:56.409466+00:00">Sun 15 Nov · 15:32</time>
+        <h3>Space roundup: week to 15 November</h3>
+        <ul><li>SpaceX catches Starship upper stage with launch tower arms</li><li>ULA&#x27;s Vulcan set to return to flight with 40 Amazon satellites</li><li>Senate panel proposes $24.9 billion for NASA in FY2027</li><li>NASA expands Moon lander contracts and plans new lunar rover</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/" target="_blank" rel="noopener">1. Ars Technica ↗</a><a href="https://spacepolicyonline.com/news/spacex-catches-a-starship/" target="_blank" rel="noopener">1. SpacePolicyOnline.com ↗</a><a href="https://spaceflightnow.com/2026/11/13/ulas-vulcan-rocket-plans-return-to-flight-with-launch-of-40-leo-satellites-for-amazon/" target="_blank" rel="noopener">2. Spaceflight Now ↗</a><a href="https://www.nasaspaceflight.com/2026/11/amazon-leo-lv-01/" target="_blank" rel="noopener">2. NASASpaceflight ↗</a><a href="https://spacepolicyonline.com/news/senate-appropriations-cjs-subcommittee-proposes-24-9-billion-for-nasa-in-fy2027/" target="_blank" rel="noopener">3. SpacePolicyOnline.com ↗</a><a href="https://spacepolicyonline.com/news/nasa-shares-moon-base-progress-contract-awards/" target="_blank" rel="noopener">4. SpacePolicyOnline.com ↗</a></div>
+        <div class="tags"><a href="/topics/space-science/">Space and science</a></div>
+      </article>
+      <p class="edition">In the Google &amp; Android roundup on Instagram</p>
+      <article>
+        <time datetime="2026-11-15T10:32:42.884918+00:00">Sun 15 Nov · 10:32</time>
+        <h3>Google &amp; Android roundup: week to 15 November</h3>
+        <ul><li>Google and Samsung launch Intelligent Eyewear smart glasses from $395</li><li>Google releases Gemini 4 Hydrogen model for complex Search questions</li><li>Google releases Gemini 4 Carbon with agent swarm feature</li><li>Google DeepMind&#x27;s AI tool formally verifies key parts of Signal&#x27;s protocol</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://9to5google.com/2026/11/12/google-intelligent-eyewear-glasses/" target="_blank" rel="noopener">1. 9to5Google ↗</a><a href="https://www.wired.com/story/google-samsung-intelligent-eyewear-launch-warby-parker-gentle-monster-smart-glasses/" target="_blank" rel="noopener">1. Wired ↗</a><a href="https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395/" target="_blank" rel="noopener">1. Ars Technica ↗</a><a href="https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen" target="_blank" rel="noopener">2. The Verge ↗</a><a href="https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/" target="_blank" rel="noopener">2. TechCrunch ↗</a><a href="https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/" target="_blank" rel="noopener">2. Ars Technica ↗</a><a href="https://9to5google.com/2026/11/10/gemini-app-4-carbon/" target="_blank" rel="noopener">3. 9to5Google ↗</a><a href="https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout" target="_blank" rel="noopener">3. The Verge ↗</a><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/" target="_blank" rel="noopener">3. Google Blog ↗</a><a href="https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/" target="_blank" rel="noopener">4. Ars Technica ↗</a><a href="https://www.theregister.com/ai-and-ml/2026/11/10/google-deepmind-melds-humans-and-ai-agents-to-vet-signals-secure-messaging-techniques/5308625" target="_blank" rel="noopener">4. The Register ↗</a><a href="https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/" target="_blank" rel="noopener">4. Wired ↗</a></div>
+        <div class="tags"><a href="/topics/google-android/">Google &amp; Android</a></div>
+      </article>
+    </section>
+    <section>
+      <h2 class="day">Saturday 14 November</h2>
+      <p class="edition">In the Daily digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-14T18:33:02.767024+00:00">Sat 14 Nov · 18:33</time>
+        <h3>Update: Copper-to-fiber wire upgrade caused FAA ground stop</h3>
+        <ul><li>Transportation Secretary Sean Duffy said the copper line was being shut down.</li><li>A newly installed router flooded other air traffic control routers.</li><li>Over 1,000 connection attempts every 4 to 5 seconds disrupted radar feeds.</li><li>Cirium counted more than 8,200 flights canceled Friday evening.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://techcrunch.com/2026/11/14/transportation-secretary-blames-routine-equipment-upgrade-for-grounding-flights-nationwide/" target="_blank" rel="noopener">TechCrunch ↗</a><a href="https://www.theverge.com/transportation/1033898/faa-ground-stop-sean-duffy-faa-copper-wire" target="_blank" rel="noopener">The Verge ↗</a></div>
+      </article>
+      <p class="edition">In the Smart home roundup on Instagram</p>
+      <article>
+        <time datetime="2026-11-14T15:52:29.345059+00:00">Sat 14 Nov · 15:52</time>
+        <h3>Smart home roundup: week to 14 November</h3>
+        <ul><li>Apple opens orders for first Apple Home Collection smart devices</li><li>Roku is exiting the smart home hardware market to focus on streaming</li><li>Google Wallet adds digital home keys for select smart locks on Android</li><li>Apple HomeView gets first update fixing nine security flaws</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theverge.com/tech/1032920/apple-smart-home-collection-release-ship-dates-available-pricing" target="_blank" rel="noopener">1. The Verge ↗</a><a href="https://9to5mac.com/2026/11/13/apple-homes-new-video-doorbell-smart-cameras-now-available-to-order/" target="_blank" rel="noopener">1. 9to5Mac ↗</a><a href="https://www.macrumors.com/2026/11/13/apple-home-collection-orders-begin/" target="_blank" rel="noopener">1. MacRumors ↗</a><a href="https://www.engadget.com/2313802/roku-will-stop-selling-smart-home-devices-and-refocus-on-streaming/" target="_blank" rel="noopener">2. Engadget ↗</a><a href="https://www.theverge.com/tech/1032084/google-wallet-digital-home-key-smart-lock-rollout" target="_blank" rel="noopener">3. The Verge ↗</a><a href="https://www.androidauthority.com/google-wallet-digital-home-keys-nfc-uwb-unlocking-3734133/" target="_blank" rel="noopener">3. Android Authority ↗</a><a href="https://9to5google.com/2026/11/11/google-wallet-home-key/" target="_blank" rel="noopener">3. 9to5Google ↗</a><a href="https://9to5mac.com/2026/11/12/apple-homeview-launches-tomorrow-but-its-first-security-update-is-already-here/" target="_blank" rel="noopener">4. 9to5Mac ↗</a></div>
+        <div class="tags"><a href="/topics/smart-home/">Smart home</a></div>
+      </article>
+    </section>
+      <aside class="follow-card">
+        <p><strong>Get the next one in your feed.</strong>Follow technews.brief on Threads: up to five stories a day, every source linked.</p>
+        <a class="button primary" href="https://www.threads.com/@technews.brief" target="_blank" rel="noopener">Follow on Threads</a>
+      </aside>
+    <p class="end">Earlier stories: browse <a href="/topics/">by topic</a> or <a href="/archive/">by month</a>.</p>
+    <footer>
+      Tech News Brief is run by Damien Conway in Ireland. Summaries are written by AI from the linked articles and
+      published automatically, without a person checking each one first. Read the original reporting for
+      the full story. <a href="/about/">How we work</a> · Updated Sat 21 Nov 2026, 15:41 (Dublin).
+    </footer>
+  </main>
+</body>
+</html>
