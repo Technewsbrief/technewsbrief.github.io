@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tech News Brief: tech news in brief, with links to every source</title>
+  <meta name="description" content="Short summaries of the day's most important tech stories, from AI and cybersecurity to privacy and science, each linked to the original reporting.">
+  <link rel="canonical" href="https://technewsbrief.net/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0F1525">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "Tech News Brief",
+      "alternateName": [
+        "technews.brief"
+      ],
+      "url": "https://technewsbrief.net/"
+    },
+    {
+      "@type": "Organization",
+      "name": "Tech News Brief",
+      "alternateName": [
+        "technews.brief"
+      ],
+      "url": "https://technewsbrief.net/",
+      "logo": "https://technewsbrief.net/logo-1080.png",
+      "sameAs": [
+        "https://www.threads.com/@technews.brief",
+        "https://www.instagram.com/technews.brief/"
+      ],
+      "email": "hello@technewsbrief.net"
+    }
+  ]
+}
+  </script>
+  <!-- Preview card when the link is shared -->
+  <meta property="og:site_name" content="Tech News Brief">
+  <meta property="og:title" content="Tech News Brief">
+  <meta property="og:description" content="The tech stories that matter, summarised from the original reporting. Up to five a day, every source linked.">
+  <meta property="og:image" content="https://technewsbrief.net/logo-1080.png">
+  <meta property="og:url" content="https://technewsbrief.net/">
+  <style>
+    /* Colours from the technews.brief logo */
+    :root { --bg: #0F1525; --bg-top: #12192C; --bg-bottom: #080C17; --card: #182039; --text: #F6F7FB;
+             --secondary: #D3D4D9; --muted: #AAADB4; --accent: #6EDEC5; --line: #26304B;
+             --edge: #66728F; /* outlines of clickable chips: 3.35:1 on the card colour (WCAG 1.4.11) */ }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg) linear-gradient(135deg, var(--bg-top), var(--bg-bottom)) fixed; color: var(--text);
+           font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+    .bar { height: 6px; background: var(--accent); }
+    main { max-width: 680px; margin: 0 auto; padding: 16px 16px 48px; }
+    /* Text navigation (Latest, Topics, Archive, About); tap height 44px */
+    .topbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 20px; }
+    nav.site { display: flex; flex-wrap: wrap; gap: 0 20px; margin-left: auto; font-size: 14px; }
+    nav.site a { color: var(--secondary); text-decoration: none; padding: 12px 0; }
+    nav.site a:hover, nav.site a[aria-current] { color: var(--accent); }
+    nav.site.bottom { margin: 24px 0 0; }
+    @media (max-width: 599px) { nav.site { margin-left: 0; } }
+    header h1 { margin: 4px 0 0; font-size: 28px; color: var(--accent); display: flex; align-items: center; gap: 12px; }
+    header h1 img { width: 44px; height: 46px; }
+    header .promise { font-size: 18px; line-height: 1.45; color: var(--text); margin: 12px 0 6px; max-width: 34em; }
+    header .stance { font-size: 14px; color: var(--muted); margin: 0 0 16px; }
+    /* Buttons: the filled one is the page's main action (follow on Threads) */
+    .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button { min-height: 44px; display: inline-flex; align-items: center; border-radius: 999px; padding: 0 22px;
+              font-weight: 700; font-size: 16px; text-decoration: none; }
+    .button.primary { background: var(--accent); color: var(--bg); }
+    .button.secondary { border: 1px solid var(--accent); color: var(--accent); }
+    .follow-card { background: var(--card); border: 1px solid var(--accent); border-radius: 14px; padding: 18px 16px;
+                   margin: 4px 0 16px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
+    .follow-card p { margin: 0; color: var(--secondary); max-width: 32em; }
+    .follow-card strong { color: var(--text); display: block; font-size: 17px; }
+    h2 { margin: 36px 0 12px; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; color: var(--secondary); }
+    h2.day { color: var(--accent); }
+    .edition { margin: 0 0 8px; color: var(--muted); font-size: 13px; }
+    article { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 12px; }
+    time { color: var(--muted); font-size: 13px; }
+    h3 { margin: 4px 0 8px; font-size: 19px; line-height: 1.3; }
+    ul { margin: 0 0 12px; padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    /* Wider screens: a bigger headline, and body text sized for about 75 characters a line */
+    @media (min-width: 600px) { h3 { font-size: 22px; line-height: 1.25; } li { font-size: 17px; } }
+    .sources { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .sources span { color: var(--muted); font-size: 13px; margin-right: 2px; }
+    /* Outlined, so the headline stays the first thing on the card; filled on hover */
+    .sources a { color: var(--accent); border: 1px solid var(--accent); padding: 0 12px; min-height: 36px;
+                  display: inline-flex; align-items: center; border-radius: 999px;
+                  text-decoration: none; font-weight: 600; font-size: 14px; }
+    .sources a:hover { background: var(--accent); color: var(--bg); }
+    .end { margin-top: 28px; color: var(--secondary); }
+    .end a { color: var(--accent); }
+    footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+    .empty { color: var(--muted); }
+    footer a { color: var(--accent); }
+    .about h2 { margin: 32px 0 8px; font-size: 20px; letter-spacing: 0; text-transform: none; color: var(--accent); }
+    .about p, .about li { color: var(--secondary); }
+    .about a { color: var(--accent); }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+    .tags a { color: var(--secondary); border: 1px solid var(--edge); padding: 3px 10px; border-radius: 999px;
+              text-decoration: none; font-size: 13px; }
+    .tags a:hover { border-color: var(--accent); color: var(--accent); }
+    .brand a { display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700;
+               color: var(--accent); text-decoration: none; }
+    .brand img { width: 32px; height: 34px; }
+    h1.topic { margin: 22px 0 8px; font-size: 30px; line-height: 1.2; }
+    .intro { color: var(--secondary); margin: 0 0 14px; }
+    .count { color: var(--muted); font-size: 14px; }
+    .count a { color: var(--accent); }
+    .topic-list a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+                    padding: 16px; margin-bottom: 12px; color: var(--text); text-decoration: none; }
+    .topic-list a:hover { border-color: var(--accent); }
+    .topic-list h3 { color: var(--accent); }
+    .topic-list p { margin: 0 0 6px; color: var(--secondary); font-size: 15px; }
+  </style>
+</head>
+<body>
+  <div class="bar"></div>
+  <main>
+    <header>
+      <nav class="site" aria-label="Site"><a href="/topics/">Topics</a><a href="/archive/">Archive</a><a href="/about/">About</a></nav>
+      <h1><img src="/logo-mark.svg" alt="">Tech News Brief</h1>
+      <p class="promise">The tech stories that matter, summarised from the original reporting. Up to five a day, every source linked.</p>
+      <p class="stance">Accurate, not first. Written by AI, run by Damien Conway in Ireland.</p>
+      <div class="cta"><a class="button primary" href="https://www.threads.com/@technews.brief" target="_blank" rel="noopener">Follow on Threads</a><a class="button secondary" href="https://www.instagram.com/technews.brief/" target="_blank" rel="noopener">Instagram</a></div>
+    </header>
+    <section>
+      <h2 class="day">Saturday 28 November</h2>
+      <p class="edition">In the Daily digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-28T18:33:24.350904+00:00">Sat 28 Nov · 18:33</time>
+        <h3>Audible removes US website download option for purchased audiobooks</h3>
+        <ul><li>Buyers on Audible&#x27;s US website can no longer download audiobooks as computer files, only stream them</li><li>Good e-Reader reported the removal on August 11, 2026</li><li>Audible says AudibleSync on Windows 10 and 11 can still download titles</li><li>Good e-Reader says international sites like Canada still have it, for now</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://consumerrights.wiki/w/Audible_removes_download_option_for_purchased_audiobooks" target="_blank" rel="noopener">consumerrights.wiki ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-28T12:33:01.981341+00:00">Sat 28 Nov · 12:33</time>
+        <h3>Card skimmer found on five retail sites before Black Friday</h3>
+        <ul><li>Script was found on Lascana, Samsonite, American Tourister, Revolve and FWRD</li><li>All five sites removed the script on November 24 or 25</li><li>Lascana&#x27;s checkout sent test card details to a third party</li><li>Script could read card details before the store checked payment</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer" target="_blank" rel="noopener">infohawk.com ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-28T07:33:01.159905+00:00">Sat 28 Nov · 07:33</time>
+        <h3>LA school district disables Google AI Overviews on school devices</h3>
+        <ul><li>LAUSD quietly disabled AI Overviews on school-issued devices, the AP reports</li><li>The district confirmed the change but did not say how it was done</li><li>The district calls the change temporary, aimed at an age-appropriate and safe experience</li><li>Google education VP Chris Phillips says blocking AI also blocks Search access</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2329851/la-school-district-blocks-google-ai-search-features/" target="_blank" rel="noopener">Engadget ↗</a></div>
+        <div class="tags"><a href="/topics/google-android/">Google &amp; Android</a></div>
+      </article>
+      <aside class="follow-card">
+        <p><strong>Get the next one in your feed.</strong>Follow technews.brief on Threads: up to five stories a day, every source linked.</p>
+        <a class="button primary" href="https://www.threads.com/@technews.brief" target="_blank" rel="noopener">Follow on Threads</a>
+      </aside>
+      <p class="edition">In the Smart home roundup on Instagram</p>
+      <article>
+        <time datetime="2026-11-28T15:33:11.833611+00:00">Sat 28 Nov · 15:33</time>
+        <h3>Smart home roundup: week to 28 November</h3>
+        <ul><li>Apple HomeView works well as a touchscreen music controller</li><li>Google plans to retire the Nest app on 25 January 2027</li><li>Google Home update adds Nest Cam siren controls and Gemini story features</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://9to5mac.com/2026/11/27/apples-new-homeview-is-exactly-the-home-product-ive-been-waiting-for/" target="_blank" rel="noopener">1. 9to5Mac ↗</a><a href="https://www.theverge.com/tech/1038713/apple-homeview-audio-smart-speaker-spotify-airplay" target="_blank" rel="noopener">1. The Verge ↗</a><a href="https://www.engadget.com/2318610/easy-apple-homeview-setup-with-iphone/" target="_blank" rel="noopener">1. Engadget ↗</a><a href="https://www.engadget.com/2325245/google-is-finally-retiring-the-nest-app-early-next-year/" target="_blank" rel="noopener">2. Engadget ↗</a><a href="https://9to5google.com/2026/11/25/google-home-update-nest-cam-thermostat-gemini-features/" target="_blank" rel="noopener">3. 9to5Google ↗</a></div>
+        <div class="tags"><a href="/topics/smart-home/">Smart home</a></div>
+      </article>
+      <p class="edition">In the Apple roundup on Instagram</p>
+      <article>
+        <time datetime="2026-11-28T10:33:49.930036+00:00">Sat 28 Nov · 10:33</time>
+        <h3>Apple roundup: week to 28 November</h3>
+        <ul><li>OpenAI countersues Apple, accusing it of stealing trade secrets</li><li>Chile&#x27;s competition regulator sues Apple over App Store rules</li><li>Korean investigators say Apple misled buyers on iPhone 16 AI features</li><li>Apple removes MiniMax&#x27;s Talkie chatbot app from App Stores worldwide</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2329747/openai-countersues-apple-and-accuses-it-of-stealing-trade-secrets/" target="_blank" rel="noopener">1. Engadget ↗</a><a href="https://9to5mac.com/2026/11/27/openai-countersues-apple-alleging-trade-secret-theft-and-supplier-threats/" target="_blank" rel="noopener">1. 9to5Mac ↗</a><a href="https://9to5mac.com/2026/11/27/apple-faces-potential-80-million-fine-and-app-store-overhaul-in-chile/" target="_blank" rel="noopener">2. 9to5Mac ↗</a><a href="https://9to5mac.com/2026/11/26/south-korea-proceeds-with-case-over-allegedly-misleading-apple-intelligence-ads/" target="_blank" rel="noopener">3. 9to5Mac ↗</a><a href="https://www.macrumors.com/2026/11/26/apple-korea-regulator-iphone-16-ai-advertising/" target="_blank" rel="noopener">3. MacRumors ↗</a><a href="https://9to5mac.com/2026/11/25/apple-pulls-popular-chinese-ai-chatbot-from-the-app-store-amid-child-safety-concerns/" target="_blank" rel="noopener">4. 9to5Mac ↗</a></div>
+        <div class="tags"><a href="/topics/apple/">Apple</a></div>
+      </article>
+    </section>
+    <section>
+      <h2 class="day">Friday 27 November</h2>
+      <p class="edition">In the Evening digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-27T18:32:54.969806+00:00">Fri 27 Nov · 18:32</time>
+        <h3>Hackers reportedly breached the Air Force&#x27;s Cloud One systems</h3>
+        <ul><li>Reuters reports the breach was found during system upgrade work</li><li>Hackers reportedly exploited a vulnerability to reach the control plane</li><li>Some admin rights were revoked and application updates were prohibited</li><li>Some projects are on hold and Cyber Command is reportedly reviewing</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2329586/hackers-reportedly-infiltrated-the-air-force-cloud-systems/" target="_blank" rel="noopener">Engadget ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-27T15:33:05.507388+00:00">Fri 27 Nov · 15:33</time>
+        <h3>Lloyds and Bank of Scotland apps and online banking fail on payday</h3>
+        <ul><li>Customers reported problems accessing online banking and transferring money on Friday morning</li><li>Reports on Downdetector began rising around 1000 UTC</li><li>Lloyds acknowledged the problems on its service status page</li><li>A Lloyds Banking Group spokesperson said the app was being restored as quickly as possible</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/applications/2026/11/27/lloyds-and-bank-of-scotland-apps-fall-over-on-payday/5312566" target="_blank" rel="noopener">The Register ↗</a></div>
+      </article>
+      <p class="edition">In the Morning digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-27T12:33:13.279568+00:00">Fri 27 Nov · 12:33</time>
+        <h3>Amazon workers plan strikes and protests in more than 20 countries</h3>
+        <ul><li>Verdi called strikes at 11 Amazon sites in Germany on Black Friday (November 27)</li><li>Teamsters plan protests on Cyber Monday (November 30) in Los Angeles and Chicago</li><li>Amazon denied Verdi&#x27;s claims and said average starting pay is above the German minimum wage</li><li>Delta, British Columbia, warehouse workers won a union contract by arbitration</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2329231/amazon-workers-plan-protests-on-black-friday-and-cyber-monday/" target="_blank" rel="noopener">Engadget ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-27T10:33:01.298405+00:00">Fri 27 Nov · 10:33</time>
+        <h3>UK Department for Work and Pensions takes some services offline</h3>
+        <ul><li>Some online services taken offline as a precaution after a &#x27;cyber incident&#x27;</li><li>Benefit and pension payments are not affected and will be paid as normal</li><li>Working with the National Cyber Security Centre and GC3 to investigate</li><li>Officials have not said which services are affected or if data is compromised</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/security/2026/11/27/british-social-security-system-techies-yank-services-offline-following-cyber-incident/5312522" target="_blank" rel="noopener">The Register ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-27T07:33:15.118430+00:00">Fri 27 Nov · 07:33</time>
+        <h3>Nvidia reportedly pauses AI server shipments to Southeast Asia</h3>
+        <ul><li>Partners including Dell and Super Micro were told to pause server shipments</li><li>Pause covers Malaysia, Singapore, Thailand and Indonesia; length unclear</li><li>Chinese firms used remote access to Nvidia chips in regional data centers</li><li>New US rules give cloud providers 90 days to apply for export licenses</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/" target="_blank" rel="noopener">TechCrunch ↗</a><a href="https://www.engadget.com/2329200/nvidia-reportedly-halts-chip-shipments-to-southeast-asia/" target="_blank" rel="noopener">Engadget ↗</a><a href="https://www.tomshardware.com/tech-industry/policy/nvidia-stops-ai-gpu-shipments-to-southeast-asia-report-claims-data-centers-in-singapore-other-countries-in-trouble-as-commerce-department-requires-cloud-providers-to-obtain-export-license" target="_blank" rel="noopener">Tom&#x27;s Hardware ↗</a></div>
+        <div class="tags"><a href="/topics/chips-china/">Chips and China</a></div>
+      </article>
+    </section>
+    <section>
+      <h2 class="day">Thursday 26 November</h2>
+      <p class="edition">In the Evening digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-26T18:32:58.820170+00:00">Thu 26 Nov · 18:32</time>
+        <h3>FCC approves SpaceX plan to launch 1 million data center satellites</h3>
+        <ul><li>The FCC says the satellites will help meet AI computing demand</li><li>Bloomberg reports they could overcrowd orbit and obscure the stars</li><li>SpaceX must start deploying them by 2033 under its license</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.technologyreview.com/2026/11/26/1149934/the-download-better-bionic-hands-ai-natural-gas-boom/" target="_blank" rel="noopener">MIT Technology Review ↗</a></div>
+        <div class="tags"><a href="/topics/space-science/">Space and science</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-26T15:33:11.461475+00:00">Thu 26 Nov · 15:33</time>
+        <h3>X launches parental controls for teen accounts</h3>
+        <ul><li>Parents can manage teen accounts for users aged 13 to 17</li><li>Parents can see time spent, set daily limits and approve new followers</li><li>Parents cannot read private messages, searches or viewing history</li><li>Parents can link up to five teen accounts, and both sides must agree</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theverge.com/news/1043078/x-parental-controls-features" target="_blank" rel="noopener">The Verge ↗</a><a href="https://www.engadget.com/2329049/x-is-adding-its-first-ever-parental-controls/" target="_blank" rel="noopener">Engadget ↗</a></div>
+      </article>
+      <p class="edition">In the Morning digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-26T12:33:03.405124+00:00">Thu 26 Nov · 12:33</time>
+        <h3>1Password says hacker stole customer names and emails, not vault data</h3>
+        <ul><li>Attacker compromised an employee&#x27;s corporate GitHub account, starting investigation November 19</li><li>Stolen data includes names, email addresses, account identifiers and sign-in timestamps</li><li>1Password says customer vault contents were never accessed by the attacker</li><li>Company rotated exposed credentials and lengthened verification codes to 10 characters</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/security/2026/11/26/hackers-help-themselves-to-1passwords-source-code-and-customer-data/5312317" target="_blank" rel="noopener">The Register ↗</a><a href="https://www.theverge.com/tech/1042409/1password-data-breach-leak" target="_blank" rel="noopener">The Verge ↗</a><a href="https://techcrunch.com/2026/11/25/1password-said-hackers-broke-into-its-internal-systems-but-customer-passwords-are-safe/" target="_blank" rel="noopener">TechCrunch ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-26T10:33:08.151743+00:00">Thu 26 Nov · 10:33</time>
+        <h3>42 state attorneys general move to block Character.AI chat sale</h3>
+        <ul><li>Attorneys general say chat data covers over 21 million US accounts</li><li>Over 2.1 million of those accounts are registered to minors</li><li>Only disclosed bidder, Smirks and Pangs Acquisition LLC, was set up November 13</li><li>AGs ask court to block the December 1 sale and a $350,000 break-up fee</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats" target="_blank" rel="noopener">The Verge ↗</a><a href="https://www.engadget.com/2328630/state-ags-are-trying-to-stop-characterai-from-auctioning-off-users-chat-histories/" target="_blank" rel="noopener">Engadget ↗</a><a href="https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/" target="_blank" rel="noopener">TechCrunch ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-26T07:33:06.008822+00:00">Thu 26 Nov · 07:33</time>
+        <h3>New York bans sale of AI chatbot toys for five years</h3>
+        <ul><li>Ban covers toys with embedded AI chatbots, such as talking dolls and robots</li><li>Violators face civil penalties of up to $15,000 per day for each violation</li><li>Law takes effect 90 days after signing, according to TechCrunch</li><li>Hochul says the toys could expose children to inappropriate conversations</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2328996/new-york-state-bans-ai-chatbot-toys-for-kids/" target="_blank" rel="noopener">Engadget ↗</a><a href="https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/" target="_blank" rel="noopener">TechCrunch ↗</a></div>
+        <div class="tags"><a href="/topics/ai-safety-regulation/">AI safety and regulation</a></div>
+      </article>
+    </section>
+    <section>
+      <h2 class="day">Wednesday 25 November</h2>
+      <p class="edition">In the Evening digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-25T18:33:13.678806+00:00">Wed 25 Nov · 18:33</time>
+        <h3>FCC conditionally approves SpaceX plan for 1 million data center satellites</h3>
+        <ul><li>Starmind satellites would be AI chip-equipped orbital data centers</li><li>SpaceX must deploy one satellite by 2033 and 100,000 by November 2035</li><li>Full constellation is due by November 2040, a 14-year runway</li><li>Authorization does not establish that orbital data centers are viable</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/" target="_blank" rel="noopener">Ars Technica ↗</a><a href="https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers" target="_blank" rel="noopener">The Verge ↗</a></div>
+        <div class="tags"><a href="/topics/space-science/">Space and science</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-25T15:33:13.614517+00:00">Wed 25 Nov · 15:33</time>
+        <h3>Iranian hackers allegedly disrupted French supermarket fridges</h3>
+        <ul><li>Hackers raised fridge temperatures at hundreds of French supermarkets</li><li>The attack reportedly destroyed millions of euros of food</li><li>French intelligence traces point to an IRGC hacking unit, Shahid Kaveh</li><li>Experts say it marks an escalation in Iran&#x27;s cyber strategy</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://arstechnica.com/security/2026/11/a-familiar-iranian-hacking-group-has-found-a-new-way-to-cause-chaos/" target="_blank" rel="noopener">Ars Technica ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <p class="edition">In the Morning digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-25T12:33:20.155338+00:00">Wed 25 Nov · 12:33</time>
+        <h3>Microsoft declares &#x27;Code Red&#x27; after nearly 24-hour Outlook outage</h3>
+        <ul><li>Outage on November 12 cut access to Exchange Online, Teams and Outlook</li><li>Microsoft&#x27;s report blamed an undetected Windows defect introduced in July</li><li>Microsoft 365 Core president Jason Henderson called it a historic outage</li><li>Microsoft is holding daily meetings with its Microsoft 365 engineering group</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theverge.com/news/1042025/microsoft-code-red-outlook-outage" target="_blank" rel="noopener">The Verge ↗</a><a href="https://arstechnica.com/gadgets/2026/11/microsofts-historic-cloud-outage-exposed-an-engineering-fog-of-war/" target="_blank" rel="noopener">Ars Technica ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-25T10:33:05.771067+00:00">Wed 25 Nov · 10:33</time>
+        <h3>TikTok had a brief outage affecting videos and search on Tuesday</h3>
+        <ul><li>TikTok says a brief technical issue impacted access to the platform</li><li>Videos, search results, favorites and profiles failed to load for users</li><li>Downdetector showed around 25,000 reports of issues at about 2:56PM ET</li><li>Service appeared to be working normally again by about 3:45PM ET</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theverge.com/tech/1041618/tiktok-down-outage" target="_blank" rel="noopener">The Verge ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-25T07:33:12.828361+00:00">Wed 25 Nov · 07:33</time>
+        <h3>Huawei guilty of stealing US trade secrets, cleared of racketeering</h3>
+        <ul><li>Jurors in a Brooklyn court found Huawei guilty of 10 of 12 counts</li><li>Counts include trade secret conspiracy, bank fraud and violating US sanctions</li><li>Jurors acquitted Huawei of racketeering conspiracy and obstruction of justice</li><li>Huawei says the charges are without legal or factual merit and plans to appeal</li><li>Sentencing is planned for September 2027</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">BBC Technology ↗</a><a href="https://www.engadget.com/2327450/huawei-is-guilty-of-conspiracy-to-steal-trade-secrets-us-jury-rules/" target="_blank" rel="noopener">Engadget ↗</a><a href="https://www.theverge.com/tech/1041820/huawei-guilty-trade-secrets-trial" target="_blank" rel="noopener">The Verge ↗</a></div>
+        <div class="tags"><a href="/topics/chips-china/">Chips and China</a></div>
+      </article>
+    </section>
+    <section>
+      <h2 class="day">Tuesday 24 November</h2>
+      <p class="edition">In the Evening digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-24T18:33:04.875842+00:00">Tue 24 Nov · 18:33</time>
+        <h3>Tidal will ban fully AI-generated music from December 9</h3>
+        <ul><li>Tidal will delete wholly AI-generated tracks from December 9</li><li>AI tracks made up 43 percent of uploads over the past 90 days</li><li>Tidal says 96 percent of AI-labeled tracks got zero plays</li><li>Distributors can&#x27;t submit fully AI songs, but AI-assisted music is still allowed</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2326812/tidal-is-banning-ai-generated-music-entirely/" target="_blank" rel="noopener">Engadget ↗</a><a href="https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/" target="_blank" rel="noopener">Ars Technica ↗</a><a href="https://www.theverge.com/entertainment/1041362/tidal-ai-music-ban" target="_blank" rel="noopener">The Verge ↗</a></div>
+        <div class="tags"><a href="/topics/ai-safety-regulation/">AI safety and regulation</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-24T15:33:10.902059+00:00">Tue 24 Nov · 15:33</time>
+        <h3>Uber, Nuro and Lucid start fully driverless robotaxi testing in Bay Area</h3>
+        <ul><li>Testing has begun with no human safety drivers on public roads in the San Francisco Bay Area</li><li>Four South Bay cities get testing first, then the Bay Area next year</li><li>Employee-only rides launch shortly after, with a public launch targeted for early 2027</li><li>Lucid has delivered more than 100 upgraded Gravity SUVs, which run Nuro&#x27;s Driver system</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theverge.com/transportation/1040676/uber-nuro-lucid-driverless-robotaxi-testing-bay-area" target="_blank" rel="noopener">The Verge ↗</a><a href="https://www.engadget.com/2326365/uber-and-lucid-start-testing-fully-driverless-rides-for-their-robotaxis-in-san-francisco/" target="_blank" rel="noopener">Engadget ↗</a></div>
+      </article>
+      <p class="edition">In the Morning digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-24T12:33:21.246668+00:00">Tue 24 Nov · 12:33</time>
+        <h3>Two exposed databases hold 3.5 billion usernames, passwords and IDs</h3>
+        <ul><li>UpGuard director of research Greg Pollock found 1.64 billion documents</li><li>Database held 840 million national ID numbers and 300 million phone numbers</li><li>Black Hills researcher Jeremiah Fowler found about 2 billion login credentials</li><li>Fowler&#x27;s trove held about 400,000 documents apparently from advanced malware</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.wired.com/story/3-billion-usernames-passwords-and-documents-leaked-online/" target="_blank" rel="noopener">Wired ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-24T10:33:15.450179+00:00">Tue 24 Nov · 10:33</time>
+        <h3>Nvidia board reinstates Jensen Huang as CEO</h3>
+        <ul><li>Board cited US government input saying no national security risk</li><li>CNBC reports shares closed up 31% after the reinstatement</li><li>Trump told CNBC that Huang did nothing wrong</li><li>Independent investigation by a law firm will proceed to conclusion</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/" target="_blank" rel="noopener">Ars Technica ↗</a><a href="https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html" target="_blank" rel="noopener">cnbc.com ↗</a><a href="https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated" target="_blank" rel="noopener">The Verge ↗</a></div>
+        <div class="tags"><a href="/topics/chips-china/">Chips and China</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-24T07:33:07.940524+00:00">Tue 24 Nov · 07:33</time>
+        <h3>Ladybird browser with its own engine is now in alpha testing</h3>
+        <ul><li>Ladybird launched in alpha for macOS and Linux after more than four years of development</li><li>Its engine was built from scratch rather than forked from another browser</li><li>Some websites won&#x27;t work in the alpha, and it will sometimes crash</li><li>A Windows version will arrive at a later stage</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theverge.com/tech/1040872/ladybird-indie-browser-engine-alpha-testing" target="_blank" rel="noopener">The Verge ↗</a><a href="https://ladybird.org/posts/alpha/" target="_blank" rel="noopener">ladybird.org ↗</a></div>
+      </article>
+    </section>
+    <section>
+      <h2 class="day">Monday 23 November</h2>
+      <p class="edition">In the Evening digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-23T18:33:12.700326+00:00">Mon 23 Nov · 18:33</time>
+        <h3>Bulgaria says hackers spent five years inside government networks</h3>
+        <ul><li>Intruders first got into government systems in 2021, the ministry says</li><li>Attackers downloaded over 130 GB, about 62 million pages, the minister said</li><li>No evidence yet that citizens&#x27; personal data was compromised</li><li>Discovered during a summer upgrade of the national cybersecurity system</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/security/2026/11/23/bulgaria-evicts-cyber-snoops-who-lurked-inside-government-networks-for-5-years/5311629" target="_blank" rel="noopener">The Register ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-23T15:33:10.173351+00:00">Mon 23 Nov · 15:33</time>
+        <h3>Cleverbridge says hackers stole customers&#x27; card numbers and CVV codes</h3>
+        <ul><li>Unauthorized activity on its platform was detected on November 4</li><li>Customers were told card numbers, expiry dates and CVV codes were involved</li><li>Cleverbridge has not explained how the attackers obtained the CVV codes</li><li>Affected customers are offered 24 months of free credit monitoring</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/cyber-crime/2026/11/23/cleverbridge-admits-attackers-stole-customers-credit-card-and-cvv-numbers-yep-you-read-that-right/5311573" target="_blank" rel="noopener">The Register ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <p class="edition">In the Morning digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-23T12:33:02.306154+00:00">Mon 23 Nov · 12:33</time>
+        <h3>Oregon and Virginia sue SpaceX over Grok sexual images</h3>
+        <ul><li>Oregon and Virginia sue SpaceX and X Corp under consumer protection laws</li><li>States allege Grok&#x27;s safeguards were weak to attract more users</li><li>States allege tens of thousands of reports to NCMEC lacked key xAI information</li><li>SpaceX did not immediately respond to a request for comment</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.wired.com/story/states-sue-spacex-over-grok-deepfakes/" target="_blank" rel="noopener">Wired ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-23T10:33:06.468352+00:00">Mon 23 Nov · 10:33</time>
+        <h3>PIRG says car software fees add $12 billion a year to US repair costs</h3>
+        <ul><li>Consumer group PIRG estimates US car repair costs are inflated by $12 billion a year</li><li>Mechanics spend an estimated 83 million hours a year buying and logging into software</li><li>Independent shops may be forced to steer some fixes, about one in five jobs, to dealerships</li><li>PIRG urges lawmakers to require standard protocols for independent diagnostic tools</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/personal-tech/2026/11/22/as-cars-go-digital-us-consumers-pay-an-extra-12-billion-a-year-for-repairs/5311412" target="_blank" rel="noopener">The Register ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-23T07:33:00.810659+00:00">Mon 23 Nov · 07:33</time>
+        <h3>Neuralink trial participant plays GTA 6 using imagined movements</h3>
+        <ul><li>An unnamed trial participant controls a PS5 controller with imagined movements</li><li>Imagined ring-finger tap activates the square button in a shared video</li><li>The patient said using a mouth stick made their jaw sore</li><li>Elon Musk claims Blindsight is engineering-ready, awaiting regulatory approval</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.tomshardware.com/peripherals/wearable-tech/neuralink-trial-participant-ditches-mouth-stick-to-play-gta-6-with-his-mind-brain-computer-interface-maps-imagined-ring-finger-taps-and-hand-slides-to-a-playstation-5-controller" target="_blank" rel="noopener">Tom&#x27;s Hardware ↗</a></div>
+      </article>
+    </section>
+    <section>
+      <h2 class="day">Sunday 22 November</h2>
+      <p class="edition">In the Daily digest on Instagram</p>
+      <article>
+        <time datetime="2026-11-22T18:32:52.480162+00:00">Sun 22 Nov · 18:32</time>
+        <h3>Delta flights in and out of Atlanta delayed by system outage</h3>
+        <ul><li>All Delta flights in and out of Atlanta face significant delays on Sunday</li><li>Outage affects the system that calculates a plane&#x27;s weight and balance</li><li>Delta says teams are using manual workarounds while automation is restored</li><li>Only Delta is affected for now, though delays could spread to other airlines</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theverge.com/transportation/1039779/delta-flights-delayed-system-outage" target="_blank" rel="noopener">The Verge ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-22T12:33:09.543054+00:00">Sun 22 Nov · 12:33</time>
+        <h3>Wells Fargo warns AI agent use is at your own risk</h3>
+        <ul><li>Wells Fargo&#x27;s new terms say any AI agent use is at your own risk</li><li>JPMorgan Chase bans third-party agents that log in with your credentials</li><li>Bank of America, Citi and PNC have also warned about agents</li><li>American Express announced some agent mistakes may be reimbursed in future</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.wired.com/story/banks-are-cracking-down-on-ai-agents/" target="_blank" rel="noopener">Wired ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-22T08:12:48.145659+00:00">Sun 22 Nov · 08:12</time>
+        <h3>FBI investigates apparent hack of law enforcement database NCIC</h3>
+        <ul><li>The FBI is investigating an apparent hack of the National Crime Information Center (NCIC)</li><li>The NCIC is used by federal and local police to share warrants and background checks</li><li>The scope of the breach does not yet appear to be clear</li><li>Trump told Fox News the hack is &#x27;not good&#x27; and may reveal new information</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/" target="_blank" rel="noopener">TechCrunch ↗</a><a href="https://www.theverge.com/tech/1039543/fbi-usda-hacked" target="_blank" rel="noopener">The Verge ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <p class="edition">In the Space roundup on Instagram</p>
+      <article>
+        <time datetime="2026-11-22T15:34:18.602999+00:00">Sun 22 Nov · 15:34</time>
+        <h3>Space roundup: week to 22 November</h3>
+        <ul><li>ULA: preliminary indications point to fuel supply in Vulcan failure</li><li>SpaceX catches Ship 42 at its launch tower after a full orbital flight</li><li>NASA&#x27;s Voyager 1 reaches one light-day from Earth</li><li>ICEYE launches €2.05B takeover bid for Italian rocket builder Avio</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://spacepolicyonline.com/news/vulcans-return-to-flight-fails/" target="_blank" rel="noopener">1. SpacePolicyOnline.com ↗</a><a href="https://spaceflightnow.com/2026/11/15/ula-suffers-first-total-mission-failure-with-loss-of-vulcan-rocket-carrying-40-amazon-leo-satellites/" target="_blank" rel="noopener">1. Spaceflight Now ↗</a><a href="https://arstechnica.com/space/2026/11/vulcan-failure-caused-by-inadequate-fuel-supply-to-engines-ula-says/" target="_blank" rel="noopener">1. Ars Technica ↗</a><a href="https://www.nasaspaceflight.com/2026/11/ship-42-catch-future/" target="_blank" rel="noopener">2. NASASpaceflight ↗</a><a href="https://www.spacescout.info/2026/11/starship-returns-to-its-launch-pad-from-orbit/" target="_blank" rel="noopener">2. Space Scout ↗</a><a href="https://www.nasa.gov/news-release/nasas-voyager-1-makes-history-reaching-one-light-day-from-earth/" target="_blank" rel="noopener">3. NASA ↗</a><a href="https://spacepolicyonline.com/news/voyager-1-reaches-new-milestone-one-light-day-from-earth/" target="_blank" rel="noopener">3. SpacePolicyOnline.com ↗</a><a href="https://www.nasaspaceflight.com/2026/11/voyager-1-light-day/" target="_blank" rel="noopener">3. NASASpaceflight ↗</a><a href="https://europeanspaceflight.com/iceye-launches-e2-05b-takeover-bid-for-italian-rocket-builder-avio/" target="_blank" rel="noopener">4. European Spaceflight ↗</a></div>
+        <div class="tags"><a href="/topics/space-science/">Space and science</a></div>
+      </article>
+      <p class="edition">In the Google &amp; Android roundup on Instagram</p>
+      <article>
+        <time datetime="2026-11-22T10:33:09.363112+00:00">Sun 22 Nov · 10:33</time>
+        <h3>Google &amp; Android roundup: week to 22 November</h3>
+        <ul><li>Google removes Search button from homepage for AI tools</li><li>Android developer verification goes global in January 2027</li><li>Google lets Gemini users opt out of AI training, keeps chats longer</li><li>Google Maps&#x27; Ask Maps can now book appointments and plan trips</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/" target="_blank" rel="noopener">1. Ars Technica ↗</a><a href="https://www.androidauthority.com/google-homepage-search-button-gone-ai-mode-3737641/" target="_blank" rel="noopener">1. Android Authority ↗</a><a href="https://www.engadget.com/2322647/google-latest-home-page-redesign-makes-gemini-even-more-prominent/" target="_blank" rel="noopener">1. Engadget ↗</a><a href="https://www.androidauthority.com/android-sideloading-rules-developer-verification-global-3737188/" target="_blank" rel="noopener">2. Android Authority ↗</a><a href="https://arstechnica.com/gadgets/2026/11/google-will-launch-android-app-verification-requirement-globally-in-january-2027/" target="_blank" rel="noopener">2. Ars Technica ↗</a><a href="https://www.androidauthority.com/gemini-new-chat-history-settings-3736303/" target="_blank" rel="noopener">3. Android Authority ↗</a><a href="https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/" target="_blank" rel="noopener">3. TechCrunch ↗</a><a href="https://www.theregister.com/ai-and-ml/2026/11/17/opting-out-of-gemini-tracking-google-will-still-hold-your-data-20x-longer/5310517" target="_blank" rel="noopener">3. The Register ↗</a><a href="https://www.engadget.com/2318186/google-maps-chatbot-can-find-appointments-and-call-to-book-them-for-you/" target="_blank" rel="noopener">4. Engadget ↗</a><a href="https://www.androidauthority.com/google-maps-ask-maps-update-3735628/" target="_blank" rel="noopener">4. Android Authority ↗</a><a href="https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop/" target="_blank" rel="noopener">4. TechCrunch ↗</a></div>
+        <div class="tags"><a href="/topics/google-android/">Google &amp; Android</a></div>
+      </article>
+    </section>
+      <aside class="follow-card">
+        <p><strong>Get the next one in your feed.</strong>Follow technews.brief on Threads: up to five stories a day, every source linked.</p>
+        <a class="button primary" href="https://www.threads.com/@technews.brief" target="_blank" rel="noopener">Follow on Threads</a>
+      </aside>
+    <p class="end">Earlier stories: browse <a href="/topics/">by topic</a> or <a href="/archive/">by month</a>.</p>
+    <footer>
+      Tech News Brief is run by Damien Conway in Ireland. Summaries are written by AI from the linked articles and
+      published automatically, without a person checking each one first. Read the original reporting for
+      the full story. <a href="/about/">How we work</a> · Updated Sat 28 Nov 2026, 18:35 (Dublin).
+    </footer>
+  </main>
+</body>
+</html>

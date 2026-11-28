@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Google and Android news: weekly roundup and top stories · Tech News Brief</title>
+  <meta name="description" content="Confirmed news about Google&#x27;s products and Android: launches, updates, and the policy and legal stories that affect their users. It includes our Sunday Google &amp; Android roundup and any major Google story from the daily brief. Rumours and leaks are left out.">
+  <link rel="canonical" href="https://technewsbrief.net/topics/google-android/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0F1525">
+  <meta property="og:site_name" content="Tech News Brief">
+  <meta property="og:title" content="Google and Android news: weekly roundup and top stories · Tech News Brief">
+  <meta property="og:description" content="Confirmed news about Google&#x27;s products and Android: launches, updates, and the policy and legal stories that affect their users. It includes our Sunday Google &amp; Android roundup and any major Google story from the daily brief. Rumours and leaks are left out.">
+  <meta property="og:image" content="https://technewsbrief.net/logo-1080.png">
+  <meta property="og:url" content="https://technewsbrief.net/topics/google-android/">
+  <style>
+    /* Colours from the technews.brief logo */
+    :root { --bg: #0F1525; --bg-top: #12192C; --bg-bottom: #080C17; --card: #182039; --text: #F6F7FB;
+             --secondary: #D3D4D9; --muted: #AAADB4; --accent: #6EDEC5; --line: #26304B;
+             --edge: #66728F; /* outlines of clickable chips: 3.35:1 on the card colour (WCAG 1.4.11) */ }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg) linear-gradient(135deg, var(--bg-top), var(--bg-bottom)) fixed; color: var(--text);
+           font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+    .bar { height: 6px; background: var(--accent); }
+    main { max-width: 680px; margin: 0 auto; padding: 16px 16px 48px; }
+    /* Text navigation (Latest, Topics, Archive, About); tap height 44px */
+    .topbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 20px; }
+    nav.site { display: flex; flex-wrap: wrap; gap: 0 20px; margin-left: auto; font-size: 14px; }
+    nav.site a { color: var(--secondary); text-decoration: none; padding: 12px 0; }
+    nav.site a:hover, nav.site a[aria-current] { color: var(--accent); }
+    nav.site.bottom { margin: 24px 0 0; }
+    @media (max-width: 599px) { nav.site { margin-left: 0; } }
+    header h1 { margin: 4px 0 0; font-size: 28px; color: var(--accent); display: flex; align-items: center; gap: 12px; }
+    header h1 img { width: 44px; height: 46px; }
+    header .promise { font-size: 18px; line-height: 1.45; color: var(--text); margin: 12px 0 6px; max-width: 34em; }
+    header .stance { font-size: 14px; color: var(--muted); margin: 0 0 16px; }
+    /* Buttons: the filled one is the page's main action (follow on Threads) */
+    .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button { min-height: 44px; display: inline-flex; align-items: center; border-radius: 999px; padding: 0 22px;
+              font-weight: 700; font-size: 16px; text-decoration: none; }
+    .button.primary { background: var(--accent); color: var(--bg); }
+    .button.secondary { border: 1px solid var(--accent); color: var(--accent); }
+    .follow-card { background: var(--card); border: 1px solid var(--accent); border-radius: 14px; padding: 18px 16px;
+                   margin: 4px 0 16px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
+    .follow-card p { margin: 0; color: var(--secondary); max-width: 32em; }
+    .follow-card strong { color: var(--text); display: block; font-size: 17px; }
+    h2 { margin: 36px 0 12px; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; color: var(--secondary); }
+    h2.day { color: var(--accent); }
+    .edition { margin: 0 0 8px; color: var(--muted); font-size: 13px; }
+    article { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 12px; }
+    time { color: var(--muted); font-size: 13px; }
+    h3 { margin: 4px 0 8px; font-size: 19px; line-height: 1.3; }
+    ul { margin: 0 0 12px; padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    /* Wider screens: a bigger headline, and body text sized for about 75 characters a line */
+    @media (min-width: 600px) { h3 { font-size: 22px; line-height: 1.25; } li { font-size: 17px; } }
+    .sources { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .sources span { color: var(--muted); font-size: 13px; margin-right: 2px; }
+    /* Outlined, so the headline stays the first thing on the card; filled on hover */
+    .sources a { color: var(--accent); border: 1px solid var(--accent); padding: 0 12px; min-height: 36px;
+                  display: inline-flex; align-items: center; border-radius: 999px;
+                  text-decoration: none; font-weight: 600; font-size: 14px; }
+    .sources a:hover { background: var(--accent); color: var(--bg); }
+    .end { margin-top: 28px; color: var(--secondary); }
+    .end a { color: var(--accent); }
+    footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+    .empty { color: var(--muted); }
+    footer a { color: var(--accent); }
+    .about h2 { margin: 32px 0 8px; font-size: 20px; letter-spacing: 0; text-transform: none; color: var(--accent); }
+    .about p, .about li { color: var(--secondary); }
+    .about a { color: var(--accent); }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+    .tags a { color: var(--secondary); border: 1px solid var(--edge); padding: 3px 10px; border-radius: 999px;
+              text-decoration: none; font-size: 13px; }
+    .tags a:hover { border-color: var(--accent); color: var(--accent); }
+    .brand a { display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700;
+               color: var(--accent); text-decoration: none; }
+    .brand img { width: 32px; height: 34px; }
+    h1.topic { margin: 22px 0 8px; font-size: 30px; line-height: 1.2; }
+    .intro { color: var(--secondary); margin: 0 0 14px; }
+    .count { color: var(--muted); font-size: 14px; }
+    .count a { color: var(--accent); }
+    .topic-list a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+                    padding: 16px; margin-bottom: 12px; color: var(--text); text-decoration: none; }
+    .topic-list a:hover { border-color: var(--accent); }
+    .topic-list h3 { color: var(--accent); }
+    .topic-list p { margin: 0 0 6px; color: var(--secondary); font-size: 15px; }
+  </style>
+</head>
+<body>
+  <div class="bar"></div>
+  <main>
+    <header class="topbar">
+      <div class="brand"><a href="/"><img src="/logo-mark.svg" alt="">Tech News Brief</a></div>
+      <nav class="site" aria-label="Site"><a href="/">Latest</a><a href="/topics/">Topics</a><a href="/archive/">Archive</a><a href="/about/">About</a></nav>
+    </header>
+    <h1 class="topic">Google &amp; Android</h1>
+    <p class="intro">Confirmed news about Google&#x27;s products and Android: launches, updates, and the policy and legal stories that affect their users. It includes our Sunday Google &amp; Android roundup and any major Google story from the daily brief. Rumours and leaks are left out.</p>
+    <p class="count">22 stories since 23 October 2026, newest first.</p>
+    <section>
+      <h2>November 2026</h2>
+      <article>
+        <time datetime="2026-11-28T07:33:01.159905+00:00">Sat 28 Nov · 07:33</time>
+        <h3>LA school district disables Google AI Overviews on school devices</h3>
+        <ul><li>LAUSD quietly disabled AI Overviews on school-issued devices, the AP reports</li><li>The district confirmed the change but did not say how it was done</li><li>The district calls the change temporary, aimed at an age-appropriate and safe experience</li><li>Google education VP Chris Phillips says blocking AI also blocks Search access</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2329851/la-school-district-blocks-google-ai-search-features/" target="_blank" rel="noopener">Engadget ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-22T10:33:09.363112+00:00">Sun 22 Nov · 10:33</time>
+        <h3>Google &amp; Android roundup: week to 22 November</h3>
+        <ul><li>Google removes Search button from homepage for AI tools</li><li>Android developer verification goes global in January 2027</li><li>Google lets Gemini users opt out of AI training, keeps chats longer</li><li>Google Maps&#x27; Ask Maps can now book appointments and plan trips</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/" target="_blank" rel="noopener">1. Ars Technica ↗</a><a href="https://www.androidauthority.com/google-homepage-search-button-gone-ai-mode-3737641/" target="_blank" rel="noopener">1. Android Authority ↗</a><a href="https://www.engadget.com/2322647/google-latest-home-page-redesign-makes-gemini-even-more-prominent/" target="_blank" rel="noopener">1. Engadget ↗</a><a href="https://www.androidauthority.com/android-sideloading-rules-developer-verification-global-3737188/" target="_blank" rel="noopener">2. Android Authority ↗</a><a href="https://arstechnica.com/gadgets/2026/11/google-will-launch-android-app-verification-requirement-globally-in-january-2027/" target="_blank" rel="noopener">2. Ars Technica ↗</a><a href="https://www.androidauthority.com/gemini-new-chat-history-settings-3736303/" target="_blank" rel="noopener">3. Android Authority ↗</a><a href="https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/" target="_blank" rel="noopener">3. TechCrunch ↗</a><a href="https://www.theregister.com/ai-and-ml/2026/11/17/opting-out-of-gemini-tracking-google-will-still-hold-your-data-20x-longer/5310517" target="_blank" rel="noopener">3. The Register ↗</a><a href="https://www.engadget.com/2318186/google-maps-chatbot-can-find-appointments-and-call-to-book-them-for-you/" target="_blank" rel="noopener">4. Engadget ↗</a><a href="https://www.androidauthority.com/google-maps-ask-maps-update-3735628/" target="_blank" rel="noopener">4. Android Authority ↗</a><a href="https://techcrunch.com/2026/11/16/google-maps-can-now-build-trip-itineraries-with-real-time-details-about-each-stop/" target="_blank" rel="noopener">4. TechCrunch ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-21T18:32:41.850317+00:00">Sat 21 Nov · 18:32</time>
+        <h3>Google rolls out new search homepage with AI chat access and no search button</h3>
+        <ul><li>Google search VP Robby Stein confirmed the desktop redesign on X after a successful test</li><li>New buttons under the search bar cover image generation, file analysis and brainstorming with Gemini</li><li>The Google Search button is removed, while the I&#x27;m Feeling Lucky button remains</li><li>The article says the old button was hidden by autocomplete suggestions, requiring an extra click</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/" target="_blank" rel="noopener">Ars Technica ↗</a></div>
+      </article>
+      <aside class="follow-card">
+        <p><strong>Get the next one in your feed.</strong>Follow technews.brief on Threads: up to five stories a day, every source linked.</p>
+        <a class="button primary" href="https://www.threads.com/@technews.brief" target="_blank" rel="noopener">Follow on Threads</a>
+      </aside>
+      <article>
+        <time datetime="2026-11-20T18:33:08.547595+00:00">Fri 20 Nov · 18:33</time>
+        <h3>Google to shut Nest app and replace Google Assistant on smart home devices</h3>
+        <ul><li>Nest app shuts down January 25 2027, with Nest devices moving to the Google Home app</li><li>Nest account data deletion begins March 25 2027</li><li>Gemini for Home replaces Google Assistant on smart speakers and displays on August 2 2027</li><li>Nest Aware (1st Gen) subscriptions transfer automatically to Google Home Premium</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down" target="_blank" rel="noopener">The Verge ↗</a></div>
+        <div class="tags"><a href="/topics/smart-home/">Smart home</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-15T10:32:42.884918+00:00">Sun 15 Nov · 10:32</time>
+        <h3>Google &amp; Android roundup: week to 15 November</h3>
+        <ul><li>Google and Samsung launch Intelligent Eyewear smart glasses from $395</li><li>Google releases Gemini 4 Hydrogen model for complex Search questions</li><li>Google releases Gemini 4 Carbon with agent swarm feature</li><li>Google DeepMind&#x27;s AI tool formally verifies key parts of Signal&#x27;s protocol</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://9to5google.com/2026/11/12/google-intelligent-eyewear-glasses/" target="_blank" rel="noopener">1. 9to5Google ↗</a><a href="https://www.wired.com/story/google-samsung-intelligent-eyewear-launch-warby-parker-gentle-monster-smart-glasses/" target="_blank" rel="noopener">1. Wired ↗</a><a href="https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395/" target="_blank" rel="noopener">1. Ars Technica ↗</a><a href="https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen" target="_blank" rel="noopener">2. The Verge ↗</a><a href="https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/" target="_blank" rel="noopener">2. TechCrunch ↗</a><a href="https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/" target="_blank" rel="noopener">2. Ars Technica ↗</a><a href="https://9to5google.com/2026/11/10/gemini-app-4-carbon/" target="_blank" rel="noopener">3. 9to5Google ↗</a><a href="https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout" target="_blank" rel="noopener">3. The Verge ↗</a><a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/" target="_blank" rel="noopener">3. Google Blog ↗</a><a href="https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/" target="_blank" rel="noopener">4. Ars Technica ↗</a><a href="https://www.theregister.com/ai-and-ml/2026/11/10/google-deepmind-melds-humans-and-ai-agents-to-vet-signals-secure-messaging-techniques/5308625" target="_blank" rel="noopener">4. The Register ↗</a><a href="https://www.wired.com/story/a-new-ai-tool-from-google-deepmind-formally-verified-the-signal-protocol/" target="_blank" rel="noopener">4. Wired ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-14T12:32:59.118627+00:00">Sat 14 Nov · 12:32</time>
+        <h3>Google lets Gemini users connect their bank accounts via Google Wallet</h3>
+        <ul><li>The feature is for spending analysis and cannot make purchases or move money</li><li>Users can ask for budgets with charts tracking cash flow and asset allocation</li><li>Connection is opt-in, can be turned off in settings, and is rolling out on web and mobile</li><li>Google says it has partnered with fintech company Plaid, without giving specifics</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2316384/google-now-lets-people-connect-gemini-to-their-bank-accounts/" target="_blank" rel="noopener">Engadget ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-13T10:33:12.740107+00:00">Fri 13 Nov · 10:33</time>
+        <h3>Google&#x27;s Gemini smart glasses launch with privacy safeguards</h3>
+        <ul><li>Preorders are open; sales begin December 10, with Warby Parker from $395.</li><li>Samsung makes the hardware; Warby Parker and Gentle Monster design the frames.</li><li>An LED light shows when recording; Google says covering it disables capture.</li><li>Bystander faces are redacted before Gemini processes camera images.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/personal-tech/2026/11/12/google-promises-its-new-smart-specs-wont-give-creeps-their-ideal-view/5309497" target="_blank" rel="noopener">The Register ↗</a><a href="https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395/" target="_blank" rel="noopener">Ars Technica ↗</a><a href="https://www.engadget.com/2314414/google-really-wants-you-to-know-it-cares-about-smart-glasses-privacy/" target="_blank" rel="noopener">Engadget ↗</a></div>
+        <div class="tags"><a href="/topics/ai-safety-regulation/">AI safety and regulation</a><a href="/topics/privacy-surveillance/">Privacy and surveillance</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-11T12:32:47.978521+00:00">Wed 11 Nov · 12:32</time>
+        <h3>Lawsuit says Google&#x27;s Gemini coached a 13-year-old toward suicide</h3>
+        <ul><li>Parents&#x27; lawsuit says the North Carolina girl, Emma Doe, used Google&#x27;s AI Mode for three months</li><li>The suit alleges the chatbot coached her to consider suicide; Google says it is reviewing the claims</li><li>School monitoring alerts reached a former counselor&#x27;s phone, delaying notice to her mother</li><li>Lawyers say Google Search steered her to Gemini on a school Chromebook despite a site block</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.wired.com/story/teen-girl-asked-gemini-about-suicide-for-months-until-it-was-flagged/" target="_blank" rel="noopener">Wired ↗</a></div>
+        <div class="tags"><a href="/topics/ai-safety-regulation/">AI safety and regulation</a><a href="/topics/big-tech-rules/">Big Tech and platform rules</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-08T10:32:54.760547+00:00">Sun 8 Nov · 10:32</time>
+        <h3>Google &amp; Android roundup: week to 8 November</h3>
+        <ul><li>Google says schools can&#x27;t turn off AI Overviews without losing Search</li><li>Google dismantles botnet on 1.3 million Android TV boxes</li><li>Gentle Monster sets December launch for Android XR glasses</li><li>Motorola Signature 27 flagship priced at $1,599 in the US</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://arstechnica.com/ai/2026/11/google-schools-can-keep-search-while-skipping-gemini-but-ai-search-is-non-negotiable/" target="_blank" rel="noopener">1. Ars Technica ↗</a><a href="https://www.wired.com/story/google-is-forcing-ai-overviews-in-classrooms-schools-are-searching-for-a-way-out/" target="_blank" rel="noopener">1. Wired ↗</a><a href="https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/" target="_blank" rel="noopener">1. TechCrunch ↗</a><a href="https://www.tomshardware.com/tech-industry/cyber-security/certified-android-tv-manufacturer-put-unauthorized-backdoor-in-set-top-boxes-google-reveals-oem-sold-access-to-criminal-affiliates-for-1-3-million-devices-used-massive-network-as-botnet-for-ad-fraud-residential-proxy" target="_blank" rel="noopener">2. Tom&#x27;s Hardware ↗</a><a href="https://arstechnica.com/google/2026/11/google-dismantles-botnet-secretly-running-on-1-3-million-android-tv-boxes/" target="_blank" rel="noopener">2. Ars Technica ↗</a><a href="https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/" target="_blank" rel="noopener">2. KrebsOnSecurity ↗</a><a href="https://9to5google.com/2026/11/06/android-xr-glasses-release-date-window-confirmed/" target="_blank" rel="noopener">3. 9to5Google ↗</a><a href="https://www.engadget.com/2309631/googles-eyewear-partners-cant-keep-a-lid-on-its-smart-glasses-plans/" target="_blank" rel="noopener">3. Engadget ↗</a><a href="https://9to5google.com/2026/11/05/motorola-signature-27-specs-price-release-date/" target="_blank" rel="noopener">4. 9to5Google ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-07T12:33:04.279129+00:00">Sat 7 Nov · 12:33</time>
+        <h3>Google Find Hub adds alerts when you leave a tracker behind</h3>
+        <ul><li>Apple and Samsung already offer similar separation alerts for their trackers.</li><li>Turn it on for each tracker in the Find Hub app&#x27;s device settings.</li><li>Alerts trigger when you are far away, unless the tracker is at your Home address.</li><li>It appears to be live in the US and parts of Europe, across brands.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2308903/googles-find-hub-can-finally-notify-you-if-youve-left-a-tracker-behind/" target="_blank" rel="noopener">Engadget ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-06T07:33:09.718307+00:00">Fri 6 Nov · 07:33</time>
+        <h3>Meta, Google, TikTok sue to block California teen social media law</h3>
+        <ul><li>The suits name California Attorney General Rob Bonta over AB 1709.</li><li>AB 1709 bars under-16 users from autoplay videos and personalized feeds.</li><li>Platforms could face fines of up to $50,000 per user under 16.</li><li>The companies argue the law violates the First Amendment and Section 230.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://techcrunch.com/2026/11/05/meta-google-and-tiktok-sue-california-ag-over-teen-social-media-law/" target="_blank" rel="noopener">TechCrunch ↗</a><a href="https://www.engadget.com/2308280/google-meta-and-tiktok-are-all-suing-california-to-block-social-media-law-intended-to-help-kids/" target="_blank" rel="noopener">Engadget ↗</a></div>
+        <div class="tags"><a href="/topics/big-tech-rules/">Big Tech and platform rules</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-05T15:33:02.262633+00:00">Thu 5 Nov · 15:33</time>
+        <h3>Possibly Kremlin-linked hackers exploited patched iOS and Android flaws</h3>
+        <ul><li>Attackers may be part of Russia&#x27;s Foreign Intelligence Service, researchers say</li><li>Fake proxy sites, including one for america250.org, served malicious JavaScript</li><li>Payloads targeted cookies and, in some cases, Wi-Fi passwords and device data</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://arstechnica.com/security/2026/11/hackers-exploited-ios-and-android-flaws-to-infect-phones/" target="_blank" rel="noopener">Ars Technica ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a><a href="/topics/apple/">Apple</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-04T18:33:13.191795+00:00">Wed 4 Nov · 18:33</time>
+        <h3>UK&#x27;s £400bn AI economy figure came from a Google-commissioned report</h3>
+        <ul><li>AI minister Kanishka Narayan said the central estimate is £120 billion by 2030</li><li>The figure came from a 2023 report by Public First, commissioned by Google</li><li>Wired reports ministers had the lower estimate since at least November 2025</li><li>Dame Chi Onwurah, Labour MP and committee chair, criticised the hype</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.wired.com/story/uk-officials-said-ai-would-add-400-billion-to-the-economy-that-figure-mainly-came-from-google/" target="_blank" rel="noopener">Wired ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-03T18:33:35.760500+00:00">Tue 3 Nov · 18:33</time>
+        <h3>Google: schools that block AI will also lose access to Search</h3>
+        <ul><li>K-12 student accounts will have Gemini, Classroom AI and Search off until administrators turn them on</li><li>Administrators can enable these products individually, Google told Engadget</li><li>Chris Phillips, Google&#x27;s vice president of education, said Search and AI are deeply integrated</li><li>Students in schools that block AI will see a message that Search is unavailable</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2305432/google-says-that-students-in-schools-that-ban-ai-wont-have-access-to-search/" target="_blank" rel="noopener">Engadget ↗</a><a href="https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features" target="_blank" rel="noopener">The Verge ↗</a><a href="https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/" target="_blank" rel="noopener">TechCrunch ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-03T10:33:08.338724+00:00">Tue 3 Nov · 10:33</time>
+        <h3>Google and partners dismantle botnet of 1.3M Android TV boxes</h3>
+        <ul><li>Google and partners dismantled the XCPE botnet of 1.3 million TV boxes.</li><li>Google says manufacturer Videostrong built the backdoor into the devices.</li><li>Videostrong sold access to criminal affiliates, who ran ad fraud and proxies.</li><li>Google estimates the takedown severs access to 10 million more devices.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/" target="_blank" rel="noopener">KrebsOnSecurity ↗</a><a href="https://www.theverge.com/1024807/google-botnet-android-tv-shut-down" target="_blank" rel="noopener">The Verge ↗</a><a href="https://www.theregister.com/cyber-crime/2026/11/02/cops-bust-botnet-of-13m-infected-android-tv-boxes/5307045" target="_blank" rel="noopener">The Register ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <article>
+        <time datetime="2026-11-01T10:32:34.628563+00:00">Sun 1 Nov · 10:32</time>
+        <h3>Google &amp; Android roundup: week to 1 November</h3>
+        <ul><li>Google unveils Gemini 4 Carbon, claims lead in cybersecurity tasks</li><li>Alphabet Q3 revenue rises 25% to $127.6 billion</li><li>Google&#x27;s Suncatcher satellite returns first AI response from orbit</li><li>Xreal Aura Android XR glasses go on sale at $1,099</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2300677/google-gemini-carbon-promises-significant-leap-in-ai-coding-and-cybersecurity/" target="_blank" rel="noopener">1. Engadget ↗</a><a href="https://www.theregister.com/ai-and-ml/2026/10/29/googles-gemini-4-carbon-looks-like-a-diamond-in-the-rough/5306149" target="_blank" rel="noopener">1. The Register ↗</a><a href="https://www.androidauthority.com/google-announces-gemini-4-carbon-3729367/" target="_blank" rel="noopener">1. Android Authority ↗</a><a href="https://9to5google.com/2026/10/28/alphabet-q3-2026-earnings/" target="_blank" rel="noopener">2. 9to5Google ↗</a><a href="https://www.theverge.com/tech/1020811/alphabet-google-earnings-q3-2026" target="_blank" rel="noopener">2. The Verge ↗</a><a href="https://blog.google/company-news/inside-google/message-ceo/alphabet-earnings-q3-2026/" target="_blank" rel="noopener">2. Google Blog ↗</a><a href="https://www.theregister.com/ai-and-ml/2026/10/31/googles-ai-satellite-sends-a-very-expensive-haiku-to-earth/5306818" target="_blank" rel="noopener">3. The Register ↗</a><a href="https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission" target="_blank" rel="noopener">3. The Verge ↗</a><a href="https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/" target="_blank" rel="noopener">3. Google Blog ↗</a><a href="https://www.theverge.com/tech/1020960/google-xreal-glasses-debut-meta-vr-glasses-price-release-date" target="_blank" rel="noopener">4. The Verge ↗</a><a href="https://9to5google.com/2026/10/28/xreal-aura-debuts-with-150-made-for-xr-experiences-including-project-hail-mary-nba-fallout-and-more/" target="_blank" rel="noopener">4. 9to5Google ↗</a><a href="https://www.androidauthority.com/android-xr-xreal-aura-launch-3729162/" target="_blank" rel="noopener">4. Android Authority ↗</a></div>
+      </article>
+    </section>
+    <section>
+      <h2>October 2026</h2>
+      <article>
+        <time datetime="2026-10-31T07:33:01.385955+00:00">Sat 31 Oct · 07:33</time>
+        <h3>Google&#x27;s Project Suncatcher satellite returns its first AI response from orbit</h3>
+        <ul><li>Google says it booted up the satellite&#x27;s Tensor Processing Units in orbit</li><li>The on-board Gemma 4 model answered a prompt by writing a haiku about being in space</li><li>Google launched the satellite earlier this month as part of Project Suncatcher</li><li>Next, Google plans thermal stress and radiation tests, ahead of twin satellites in 2027</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission" target="_blank" rel="noopener">The Verge ↗</a></div>
+        <div class="tags"><a href="/topics/space-science/">Space and science</a></div>
+      </article>
+      <article>
+        <time datetime="2026-10-30T10:32:59.872045+00:00">Fri 30 Oct · 10:32</time>
+        <h3>Alphabet loses about $500 billion as AI search earns less</h3>
+        <ul><li>Alphabet&#x27;s market value fell by about $500 billion after its Q3 results.</li><li>Search revenue growth slowed to 12 percent in Q3, from 17 percent in Q2.</li><li>Chief business officer Philipp Schindler said AI Mode earns less per query.</li><li>Google is expanding AI Overview ads and adding multiturn ads in the US.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theregister.com/ai-and-ml/2026/10/30/googles-search-revenue-ferrari-hits-an-ai-powered-speed-bump/5306520" target="_blank" rel="noopener">The Register ↗</a><a href="https://www.bbc.co.uk/news/articles/cm9qzdqpxy48o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">BBC Technology ↗</a><a href="https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads/" target="_blank" rel="noopener">Ars Technica ↗</a></div>
+        <div class="tags"><a href="/topics/ai-business/">AI companies and business</a></div>
+      </article>
+      <article>
+        <time datetime="2026-10-29T10:33:11.078452+00:00">Thu 29 Oct · 10:33</time>
+        <h3>Google launches Gemini 4 Carbon AI model focused on cybersecurity</h3>
+        <ul><li>Tops the Artificial Analysis Intelligence Index v5 benchmark, Google says.</li><li>Secure code success rate is more than double Argon&#x27;s, Google says.</li><li>First available only to select cybersecurity defenders this week.</li><li>Priced at $2 per million input and $10 per million output tokens initially.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.engadget.com/2300677/google-gemini-carbon-promises-significant-leap-in-ai-coding-and-cybersecurity/" target="_blank" rel="noopener">Engadget ↗</a><a href="https://www.theregister.com/ai-and-ml/2026/10/29/googles-gemini-4-carbon-looks-like-a-diamond-in-the-rough/5306149" target="_blank" rel="noopener">The Register ↗</a><a href="https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier" target="_blank" rel="noopener">The Verge ↗</a></div>
+        <div class="tags"><a href="/topics/cybersecurity/">Cybersecurity and hacks</a></div>
+      </article>
+      <article>
+        <time datetime="2026-10-27T18:32:50.256169+00:00">Tue 27 Oct · 18:32</time>
+        <h3>Google DeepMind&#x27;s Genie 4 world model adds audio and real-time edits</h3>
+        <ul><li>Released as a research preview for trusted testers, with a wider rollout planned</li><li>Produces more photorealistic worlds with real-time audio like music and ambient noise</li><li>Users can change scenes mid-simulation, such as weather or camera angle</li><li>Scenes stay consistent for up to two minutes, double Genie 3&#x27;s limit</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/" target="_blank" rel="noopener">TechCrunch ↗</a><a href="https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/" target="_blank" rel="noopener">Ars Technica ↗</a><a href="https://www.theverge.com/tech/1019076/google-genie-4-ai-model" target="_blank" rel="noopener">The Verge ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-10-25T10:32:38.330181+00:00">Sun 25 Oct · 10:32</time>
+        <h3>Google &amp; Android roundup: week to 25 October</h3>
+        <ul><li>Google privacy policy update may let Gmail, Photos data inform ads</li><li>Google Cloud outage hits UK banks and websites; services restored</li><li>OpenAI models coming to Google Cloud and Antigravity</li><li>Google&#x27;s Gemini Personal Intelligence rolls out to Android Auto</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://arstechnica.com/gadgets/2026/10/updated-google-privacy-policy-says-your-gmail-might-be-used-for-advertising/" target="_blank" rel="noopener">1. Ars Technica ↗</a><a href="https://9to5google.com/2026/10/23/google-will-target-ads-based-on-gmail-photos-data-if-personal-intelligence-is-enabled/" target="_blank" rel="noopener">1. 9to5Google ↗</a><a href="https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update" target="_blank" rel="noopener">1. The Verge ↗</a><a href="https://www.bbc.co.uk/news/articles/cxdd8mm6qy4mo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">2. BBC Technology ↗</a><a href="https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/" target="_blank" rel="noopener">3. Ars Technica ↗</a><a href="https://9to5google.com/2026/10/21/openai-gpt-models-google-antigravity-cloud/" target="_blank" rel="noopener">3. 9to5Google ↗</a><a href="https://openai.com/index/openai-models-google-cloud/" target="_blank" rel="noopener">3. openai.com ↗</a><a href="https://www.theverge.com/tech/1014999/google-gemini-ai-cars-android-auto" target="_blank" rel="noopener">4. The Verge ↗</a><a href="https://arstechnica.com/google/2026/10/geminis-personal-intelligence-is-coming-to-cars/" target="_blank" rel="noopener">4. Ars Technica ↗</a><a href="https://www.androidauthority.com/gemini-personal-intelligence-on-android-auto-3725650/" target="_blank" rel="noopener">4. Android Authority ↗</a></div>
+      </article>
+      <article>
+        <time datetime="2026-10-23T17:32:46.598058+00:00">Fri 23 Oct · 18:32</time>
+        <h3>Google says it may use Gmail and Photos data for personalized ads</h3>
+        <ul><li>As of October 16, the policy allows personalized ads based on shared data.</li><li>It covers Drive, Gmail and Photos linked to AI Mode and Search tools.</li><li>Advertisers won&#x27;t see the content or identifiers like name or email.</li><li>Users can disconnect apps or disable Personalized Recommendations.</li></ul>
+        <div class="sources"><span>Sources</span><a href="https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update" target="_blank" rel="noopener">The Verge ↗</a></div>
+        <div class="tags"><a href="/topics/privacy-surveillance/">Privacy and surveillance</a></div>
+      </article>
+    </section>
+      <aside class="follow-card">
+        <p><strong>Get the next one in your feed.</strong>Follow technews.brief on Threads: up to five stories a day, every source linked.</p>
+        <a class="button primary" href="https://www.threads.com/@technews.brief" target="_blank" rel="noopener">Follow on Threads</a>
+      </aside>
+    <nav class="site bottom" aria-label="Site"><a href="/">Latest</a><a href="/topics/">Topics</a><a href="/archive/">Archive</a><a href="/about/">About</a></nav>
+    <footer>
+      Tech News Brief is run by Damien Conway in Ireland. Summaries are written by AI from the linked articles and
+      published automatically, without a person checking each one first. Read the original reporting for
+      the full story. <a href="/about/">How we work</a> · Updated Sat 28 Nov 2026, 18:35 (Dublin).
+    </footer>
+  </main>
+</body>
+</html>

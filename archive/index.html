@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tech news archive by month · Tech News Brief</title>
+  <meta name="description" content="Every Tech News Brief story, month by month, with links to the original reporting.">
+  <link rel="canonical" href="https://technewsbrief.net/archive/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0F1525">
+  <meta property="og:site_name" content="Tech News Brief">
+  <meta property="og:title" content="Tech news archive by month · Tech News Brief">
+  <meta property="og:description" content="Every Tech News Brief story, month by month, with links to the original reporting.">
+  <meta property="og:image" content="https://technewsbrief.net/logo-1080.png">
+  <meta property="og:url" content="https://technewsbrief.net/archive/">
+  <style>
+    /* Colours from the technews.brief logo */
+    :root { --bg: #0F1525; --bg-top: #12192C; --bg-bottom: #080C17; --card: #182039; --text: #F6F7FB;
+             --secondary: #D3D4D9; --muted: #AAADB4; --accent: #6EDEC5; --line: #26304B;
+             --edge: #66728F; /* outlines of clickable chips: 3.35:1 on the card colour (WCAG 1.4.11) */ }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg) linear-gradient(135deg, var(--bg-top), var(--bg-bottom)) fixed; color: var(--text);
+           font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+    .bar { height: 6px; background: var(--accent); }
+    main { max-width: 680px; margin: 0 auto; padding: 16px 16px 48px; }
+    /* Text navigation (Latest, Topics, Archive, About); tap height 44px */
+    .topbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 20px; }
+    nav.site { display: flex; flex-wrap: wrap; gap: 0 20px; margin-left: auto; font-size: 14px; }
+    nav.site a { color: var(--secondary); text-decoration: none; padding: 12px 0; }
+    nav.site a:hover, nav.site a[aria-current] { color: var(--accent); }
+    nav.site.bottom { margin: 24px 0 0; }
+    @media (max-width: 599px) { nav.site { margin-left: 0; } }
+    header h1 { margin: 4px 0 0; font-size: 28px; color: var(--accent); display: flex; align-items: center; gap: 12px; }
+    header h1 img { width: 44px; height: 46px; }
+    header .promise { font-size: 18px; line-height: 1.45; color: var(--text); margin: 12px 0 6px; max-width: 34em; }
+    header .stance { font-size: 14px; color: var(--muted); margin: 0 0 16px; }
+    /* Buttons: the filled one is the page's main action (follow on Threads) */
+    .cta { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button { min-height: 44px; display: inline-flex; align-items: center; border-radius: 999px; padding: 0 22px;
+              font-weight: 700; font-size: 16px; text-decoration: none; }
+    .button.primary { background: var(--accent); color: var(--bg); }
+    .button.secondary { border: 1px solid var(--accent); color: var(--accent); }
+    .follow-card { background: var(--card); border: 1px solid var(--accent); border-radius: 14px; padding: 18px 16px;
+                   margin: 4px 0 16px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
+    .follow-card p { margin: 0; color: var(--secondary); max-width: 32em; }
+    .follow-card strong { color: var(--text); display: block; font-size: 17px; }
+    h2 { margin: 36px 0 12px; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; color: var(--secondary); }
+    h2.day { color: var(--accent); }
+    .edition { margin: 0 0 8px; color: var(--muted); font-size: 13px; }
+    article { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin-bottom: 12px; }
+    time { color: var(--muted); font-size: 13px; }
+    h3 { margin: 4px 0 8px; font-size: 19px; line-height: 1.3; }
+    ul { margin: 0 0 12px; padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    /* Wider screens: a bigger headline, and body text sized for about 75 characters a line */
+    @media (min-width: 600px) { h3 { font-size: 22px; line-height: 1.25; } li { font-size: 17px; } }
+    .sources { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .sources span { color: var(--muted); font-size: 13px; margin-right: 2px; }
+    /* Outlined, so the headline stays the first thing on the card; filled on hover */
+    .sources a { color: var(--accent); border: 1px solid var(--accent); padding: 0 12px; min-height: 36px;
+                  display: inline-flex; align-items: center; border-radius: 999px;
+                  text-decoration: none; font-weight: 600; font-size: 14px; }
+    .sources a:hover { background: var(--accent); color: var(--bg); }
+    .end { margin-top: 28px; color: var(--secondary); }
+    .end a { color: var(--accent); }
+    footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+    .empty { color: var(--muted); }
+    footer a { color: var(--accent); }
+    .about h2 { margin: 32px 0 8px; font-size: 20px; letter-spacing: 0; text-transform: none; color: var(--accent); }
+    .about p, .about li { color: var(--secondary); }
+    .about a { color: var(--accent); }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+    .tags a { color: var(--secondary); border: 1px solid var(--edge); padding: 3px 10px; border-radius: 999px;
+              text-decoration: none; font-size: 13px; }
+    .tags a:hover { border-color: var(--accent); color: var(--accent); }
+    .brand a { display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700;
+               color: var(--accent); text-decoration: none; }
+    .brand img { width: 32px; height: 34px; }
+    h1.topic { margin: 22px 0 8px; font-size: 30px; line-height: 1.2; }
+    .intro { color: var(--secondary); margin: 0 0 14px; }
+    .count { color: var(--muted); font-size: 14px; }
+    .count a { color: var(--accent); }
+    .topic-list a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+                    padding: 16px; margin-bottom: 12px; color: var(--text); text-decoration: none; }
+    .topic-list a:hover { border-color: var(--accent); }
+    .topic-list h3 { color: var(--accent); }
+    .topic-list p { margin: 0 0 6px; color: var(--secondary); font-size: 15px; }
+  </style>
+</head>
+<body>
+  <div class="bar"></div>
+  <main>
+    <header class="topbar">
+      <div class="brand"><a href="/"><img src="/logo-mark.svg" alt="">Tech News Brief</a></div>
+      <nav class="site" aria-label="Site"><a href="/">Latest</a><a href="/topics/">Topics</a><a href="/archive/" aria-current="page">Archive</a><a href="/about/">About</a></nav>
+    </header>
+    <h1 class="topic">Archive</h1>
+    <p class="intro">Every story we've posted, month by month, with links to the original reporting.</p>
+    <div class="topic-list">
+      <a href="/archive/2026-11/">
+        <h3>November 2026</h3>
+        <p>139 stories</p>
+      </a>
+      <a href="/archive/2026-10/">
+        <h3>October 2026</h3>
+        <p>66 stories</p>
+      </a>
+    </div>
+      <aside class="follow-card">
+        <p><strong>Get the next one in your feed.</strong>Follow technews.brief on Threads: up to five stories a day, every source linked.</p>
+        <a class="button primary" href="https://www.threads.com/@technews.brief" target="_blank" rel="noopener">Follow on Threads</a>
+      </aside>
+    <nav class="site bottom" aria-label="Site"><a href="/">Latest</a><a href="/topics/">Topics</a><a href="/archive/">Archive</a><a href="/about/">About</a></nav>
+    <footer>
+      Tech News Brief is run by Damien Conway in Ireland. Summaries are written by AI from the linked articles and
+      published automatically, without a person checking each one first. Read the original reporting for
+      the full story. <a href="/about/">How we work</a> · Updated Sat 28 Nov 2026, 18:35 (Dublin).
+    </footer>
+  </main>
+</body>
+</html>

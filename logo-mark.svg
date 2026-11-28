@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="300 283 746 783" width="746" height="783">
+  <title>technews.brief</title>
+  <g fill="none" stroke="#6EDEC5" stroke-width="76" stroke-linecap="round" stroke-linejoin="round">
+    <!-- t: stem curving into the foot, and the crossbar -->
+    <path d="M480.5 358 V595 A95 95 0 0 0 575.5 690 H585"/>
+    <path d="M376 480.5 H585"/>
+    <!-- n: left stem, and the arch into the right leg -->
+    <path d="M743 481 V690"/>
+    <path d="M766 500 Q800 480.5 860 480.5 H875.5 A95 95 0 0 1 970.5 575.5 V690"/>
+  </g>
+  <path d="M781 572 Q784 528 832 518 L781 518 Z" fill="#6EDEC5"/>
+  <!-- the three "brief" lines -->
+  <rect x="337" y="797" width="672" height="54" rx="27" fill="#F6F7FB"/>
+  <rect x="337" y="886" width="511" height="54" rx="27" fill="#D3D4D9"/>
+  <rect x="337" y="975" width="349" height="54" rx="27" fill="#AAADB4"/>
+</svg>
